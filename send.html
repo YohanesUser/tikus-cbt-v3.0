@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Buku Digital</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="Screenshot 2025-01-19 214617.png" type="image/x-icon">
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            background: #2c3e50; /* Warna latar belakang */
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: #fff;
+            font-weight: 700;
+        }
+
+        .app-description {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-top: 5px;
+        }
+
+        /* Container */
+        .login-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Login Box */
+        .login-box {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 30px 40px;
+            width: 100%;
+            max-width: 400px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .info-text {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 20px;
+        }
+
+        /* Form Styling */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Input Group */
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        /* Input Fields */
+        input {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.2);
+            color: #fff;
+            font-size: 1rem;
+            outline: none;
+            transition: background 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        input::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        input:focus {
+            background: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+        }
+
+        /* Button Styling */
+        button {
+            padding: 12px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 8px;
+            background: #4caf50;
+            color: #fff;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        button:hover {
+            background: #45a049;
+            transform: scale(1.05);
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            .login-box {
+                width: 90%;
+                padding: 20px;
+            }
+
+            h2 {
+                font-size: 1.8rem;
+            }
+
+            button {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header dengan Judul Aplikasi -->
+    <header>
+        <h1>Login Buku Digital</h1>
+    </header>
+
+    <!-- Kontainer Login -->
+    <div class="login-container">
+        <div class="login-box">
+            <h2>Masukkan Nama</h2>
+            <p class="info-text">Silakan masukkan nama untuk masuk.</p>
+            <form method="post" action="https://script.google.com/macros/s/AKfycbxBimvzBPv5OyDg3_WpKN_2kq40XsTjbJJrONBbBNBUfiaO51pn43fPdToQSAYjuDGF4Q/exec">
+                <div class="input-group">
+                    <input type="text" name="nama" placeholder="Nama" required>
+                </div>
+                <button type="submit">Masuk</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>CBT Tikus Production</title>
+            <link rel="stylesheet" href="styles.css">
+            <link rel="icon" type="image/webp" href="d723afa8-87c7-4344-8064-11f4e3ab5480.webp">
+    <style>
+        /* Container utama */
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Exam info layout dengan Flexbox */
+        .exam-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 500px;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .exam-info p {
+            width: 45%;
+            margin: 10px 0;
+        }
+
+        .spinner {
+            width: 40px; /* Sesuaikan ukuran */
+            height: 40px; /* Sesuaikan ukuran */
+            border: 5px solid #ffffff; /* Warna latar */
+            border-top: 5px solid #3498db; /* Warna bagian yang berputar */
+            border-radius: 50%;
+            animation: spin 2s linear infinite;
+            margin-top: 10px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #283ba7;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #882121;
+        }
+
+        /* Style untuk div tambahan mapel */
+        .mapel-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .modal-content input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .modal-content button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .modal-content button:hover {
+            background-color: #0056b3;
+        }
+
+        .close {
+            color: red;
+            float: right;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="student-name">Selamat datang di Cbt, Student</h1>
+        <p>Siapkah kamu menjawab pertanyaan latihan soal dari ADMIN??</p>
+        
+        <div class="mapel-container">
+            <!-- Mata Pelajaran 1 -->
+            <div class="exam-info">
+                <p>Mapel: <strong>INFOMATIKA</strong></p>
+                <p>Waktu: <strong>25 MENIT</strong></p>
+                <p>Jumlah Soal: <strong>40</strong></p>
+                <p>Status Soal: <strong>Active</strong></p>
+                <p>Expired: <strong>-</strong></p>
+                <p>Guru: <strong>ADMIN YHNS</strong></p>
+                <div class="spinner"></div>
+                <button id="start-exam">Mulai Ujian</button>
+            </div>
+            
+            <!-- Mata Pelajaran Lain (Contoh: Pengetahuan Umum) -->
+            <div class="exam-info">
+                <p>Mapel: <strong>MATEMATIKA</strong></p>
+                <p>Waktu: <strong>-</strong></p>
+                <p>Jumlah Soal: <strong>-</strong></p>
+                <p>Status Soal: <strong>NO DATA</strong></p>
+                <p>Expired: <strong>-</strong></p>
+                <p>Guru: <strong>Admin Yhns</strong></p>
+                <div class="spinner"></div>
+                <button id="start-exam1">Mulai Ujian</button>
+            </div>
+        </div>
+
+        <div class="exam-info">
+            <p>Mapel: <strong>No Data</strong></p>
+            <p>Waktu: <strong>No Data</strong></p>
+            <p>Jumlah Soal: <strong>No Data</strong></p>
+            <p>Status Soal: <strong>Inactive</strong></p>
+            <p>Active: <strong>-</strong></p>
+            <p>Guru: <strong>Admin1</strong></p>
+            <div class="spinner"></div>
+            <button id="start-exam2">Mulai Ujian</button>
+        </div>
+    </div>
+
+    <!-- Modal untuk input token -->
+    <div id="tokenModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Masukkan Token</h2>
+            <p>Diisi sama persis ya mas</p>
+            <input type="text" id="token-input" placeholder="BDNUUA ini tokennya ya sayang" maxlength="6">
+            <button id="verify-token-btn">Verifikasi Token</button>
+            <button id="whatsapp-btn" style="margin-top: 10px; background-color: #25D366; color: white; border: none; border-radius: 5px; padding: 10px; cursor: pointer;" onclick="window.open('https://api.whatsapp.com/send/?phone=6289530067456&text=Selamat+Pagi/siang/malam+min%2C+Mau+tanya+token+%3A&type=phone_number&app_absent=0', '_blank')">Tanya Token ke Admin</button>
+        </div>
+    </div>
+    <div class="exam-info">
+    <div class="image-container">
+        <img src="Gambar WhatsApp 2025-03-08 pukul 22.17.21_05187469.jpg" alt="Jadwal Ujian Sekolah">
+    </div>
+    </div>
+
+
+    <footer style="background-color: #333; color: #fff; padding: 20px 0; text-align: center;">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;">
+                <!-- Informasi Perusahaan -->
+                <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
+                    <h4 style="margin: 0 0 10px;">Tentang Kami</h4>
+                    <p style="margin: 0;">Kami menyediakan layanan CBT terbaik untuk kebutuhan belajar.</p>
+                </div>
+    
+                <!-- Media Sosial -->
+                <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
+                    <h4 style="margin: 0 0 10px;">ikuti Prompt Engineer</h4>
+                    <div style="display: flex; gap: 10px; justify-content: center;">
+                        <a href="https://www.facebook.com/profile.php?id=100088714771697" target="_blank" style="color: #fff; font-size: 20px; text-decoration: none;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" width="24" height="24">
+                        </a>
+                        <a href="https://www.github.com/YohanesUser" target="_blank" style="color: #fff; font-size: 20px; text-decoration: none;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" width="24" height="24">
+                        </a>
+                        <a href="https://www.instagram.com/yohanes_af_sr" target="_blank" style="color: #fff; font-size: 20px; text-decoration: none;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="24" height="24">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top: 20px;">
+                <img src="https://github.com/YohanesUser/galeri/blob/main/LOGO_TIKUS_PRODUCTION_logo_atas-removebg-preview.png?raw=true" alt="Tikus Production" width="150">
+            </div>
+            <br>
+            <br>
+            <br>
+            <script type="text/javascript" src="https://www.free-counters.org/count/hfpu"></script><br>
+            <a href='https://www.versicherungen.at/cyber-versicherung/'>Cyber-Angriff Versicherung</a> <script type='text/javascript' src='https://whomania.com/ctr?id=3c8e1c47418ec07fcf11507b77d9e70793dee02f'></script>
+    
+            <!-- Hak Cipta -->
+            <div style="margin-top: 20px; border-top: 1px solid #444; padding-top: 10px; font-size: 14px;">
+                <p style="margin: 0;">&copy; 2025 CBT Tikus Production. Semua hak dilindungi.</p>
+                <p>Versi 3.0</p>
+            </div>
+    
+            <!-- Logo Tikus Production -->
+           
+        </div>
+    </footer>
+      
+      <style>
+        /* Reset margin dan padding */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Memastikan tinggi penuh */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Tinggi body mencakup seluruh viewport */
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 16px; /* Pastikan footer selalu di bawah */
+}
+
+/* Menambahkan jarak yang cukup jauh antara footer dan elemen di atasnya */
+.content {
+  margin-bottom: 50px; /* Menambah jarak antara konten dan footer */
+}
+
+@media (min-width: 992px) {
+  footer {
+    padding: 10px 0;
+    font-size: 14px;
+    margin-top: 40px;
+  }
+  footer h4 {
+    font-size: 16px;
+  }
+  footer p {
+    font-size: 12px;
+  }
+}
+
+/* Gaya untuk gambar agar selalu di tengah bawah */
+.image-container {
+    width: 90%; /* Lebar mengikuti container atas */
+    background: white;
+    padding: 10px;
+    border-radius: 0 0 10px 10px; /* Hanya bawah yang melengkung */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    margin-left: 5px;
+}
+
+/* Gaya gambar */
+.image-container img {
+    width: 80%; /* Ukuran gambar responsif */
+    max-width: 300px;
+}
+
+/* Mode PC */
+@media (min-width: 768px) {
+    .modal-content {
+        max-width: 500px; /* Container lebih lebar di PC */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Posisi konten selalu di tengah */
+    }
+    
+    .image-container {
+        width: 55%; /* Sesuai dengan container atas */
+        display: flex;
+        justify-content: center; /* Pusatkan gambar di tengah */
+        align-items: center;
+        padding: 15px;
+        background: white;
+        border-radius: 10px; /* Hanya bawah yang melengkung */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        margin-left: 80px;
+    }
+
+    /* Gaya gambar */
+    .image-container img {
+        width: 80%; /* Ukuran gambar responsif */
+        max-width: 300px;
+    }
+}
+
+
+
+      </style>
+
+    <script>
+        // Ambil nama siswa dari sessionStorage
+        const studentName = sessionStorage.getItem('studentName');
+    
+        if (studentName) {
+            // Tampilkan nama siswa di halaman dashboard
+            document.getElementById('student-name').textContent = `Halo, ${studentName} Selamat datang di CBT😎😋`;
+        } else {
+            // Jika tidak ada nama siswa, arahkan kembali ke halaman login
+            window.location.href = 'index.html';
+        }
+
+        // Fungsi untuk membuka modal
+        function openModal() {
+            document.getElementById('tokenModal').style.display = 'flex';
+        }
+
+        // Fungsi untuk menutup modal
+        function closeModal() {
+            document.getElementById('tokenModal').style.display = 'none';
+        }
+
+        // Fungsi untuk verifikasi token
+        function verifyToken(expectedToken, examPage) {
+            const userToken = document.getElementById('token-input').value;
+            if (userToken && userToken.length === 6) {
+                if (userToken === expectedToken) {
+                    alert("Token benar, Anda akan diarahkan ke halaman ujian.");
+                    closeModal();
+                    window.location.href = examPage; // Arahkan ke halaman ujian
+                } else {
+                    alert("Token salah. Silakan coba lagi.");
+                }
+            } else {
+                alert("Token harus terdiri dari 6 huruf.");
+            }
+        }
+
+        // Event listener untuk tombol Mulai Ujian
+        document.getElementById('start-exam').addEventListener('click', () => {
+            openModal(); // Buka modal untuk input token
+
+            // Set token yang valid dan halaman ujian
+            const token = "BDNUUA";
+            const examPage = 'question.html?page=1';
+
+            // Verifikasi token ketika tombol Verifikasi diklik
+            document.getElementById('verify-token-btn').onclick = () => verifyToken(token, examPage);
+        });
+
+        // Event listener untuk tombol Mulai Ujian (Pelajaran Lain)
+        document.getElementById('start-exam1').addEventListener('click', () => {
+            openModal(); // Buka modal untuk input token
+
+            // Set token yang valid dan halaman ujian
+            const token = "BDNUUA";
+            const examPage = 'question1.html?page=1';
+
+            // Verifikasi token ketika tombol Verifikasi diklik
+            document.getElementById('verify-token-btn').onclick = () => verifyToken(token, examPage);
+        });
+
+        document.getElementById('start-exam2').addEventListener('click', () => { 
+            // Arahkan pengguna ke halaman GitHub Galeri
+            window.location.href = 'https://achmadlutfi.wordpress.com/category/aplikasi-cbt/';
+        });
+
+
+        // Event listener untuk menutup modal
+        document.querySelector('.close').addEventListener('click', closeModal);
+
+        // Tutup modal jika klik di luar modal
+        window.onclick = function(event) {
+            const modal = document.getElementById('tokenModal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+    </script>
+    
+</body>
+</html>

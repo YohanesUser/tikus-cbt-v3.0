@@ -1,0 +1,493 @@
+[
+    {
+        "question": "Apa yang dimaksud dengan algoritma dalam pemrograman?",
+        "options": [
+            "A. Urutan langkah-langkah logis untuk menyelesaikan masalah",
+            "B. Bahasa pemrograman yang digunakan untuk membuat aplikasi",
+            "C. Program komputer yang sudah jadi",
+            "D. Proses mengubah kode program menjadi bahasa mesin"
+        ],
+        "answer": 0,
+        "image": ""
+    },
+    {
+        "question": "Apa fungsi utama dari CPU dalam sebuah komputer?",
+        "options": [
+            "A. Menampilkan gambar pada layar",
+            "B. Menghubungkan komputer dengan jaringan internet",
+            "C. Melakukan perhitungan dan mengeksekusi perintah",
+            "D. Menyimpan data secara permanen"
+        ],
+        "answer": 2,
+        "image": ""
+    },
+    {
+        "question": "Apa yang dimaksud dengan jaringan komputer?",
+        "options": [
+            "A. Perangkat penyimpanan data",
+            "B. Sistem operasi pada komputer",
+            "C. Sekumpulan komputer yang terhubung satu sama lain",
+            "D. Bahasa pemrograman yang digunakan dalam pengolahan data"
+        ],
+        "answer": 2,
+        "image": ""
+    },
+    {
+        "question": "Manakah yang termasuk dalam perangkat keras (hardware)?",
+        "options": [
+            "A. Microsoft Word",
+            "B. Mouse",
+            "C. Windows 10",
+            "D. Google Chrome"
+        ],
+        "answer": 1,
+        "image": ""
+    },
+    {
+        "question": "Apa kepanjangan dari HTML?",
+        "options": [
+            "A. Home Tool Markup Language",
+            "B. High Technology Modern Language",
+            "C. Hyperlink Text Managing Language",
+            "D. Hyper Text Markup Language"
+        ],
+        "answer": 3,
+        "image": ""
+    },
+    {
+        "question": "Apa fungsi utama dari RAM dalam komputer?",
+        "options": [
+            "A. Menghubungkan komputer dengan jaringan internet",
+            "B. Menjalankan sistem operasi dan aplikasi",
+            "C. Menyimpan data secara permanen",
+            "D. Menampilkan tampilan visual pada layar"
+        ],
+        "answer": 1,
+        "image": ""
+    },
+    {
+        "question": "Salah satu contoh sistem operasi adalah?",
+        "options": [
+            "A. Google Chrome",
+            "B. Photoshop",
+            "C. Microsoft Excel",
+            "D. Linux"
+        ],
+        "answer": 3,
+        "image": ""
+    },
+    {
+        "question": "Apa yang dimaksud dengan software?",
+        "options": [
+            "A. Program yang digunakan untuk menjalankan komputer",
+            "B. Kumpulan data yang tersimpan dalam komputer",
+            "C. Perangkat keras komputer",
+            "D. Alat output seperti printer dan monitor"
+        ],
+        "answer": 0,
+        "image": ""
+    },
+    {
+        "question": "Apa fungsi utama dari sistem operasi?",
+        "options": [
+            "A. Menghubungkan komputer dengan jaringan internet",
+            "B. Mengolah data menjadi informasi",
+            "C. Menjalankan perangkat keras dan perangkat lunak",
+            "D. Menyimpan file dalam jangka panjang"
+        ],
+        "answer": 2,
+        "image": ""
+    },
+    {
+        "question": "Apa nama perangkat keras yang berfungsi sebagai penyimpan data permanen?",
+        "options": [
+            "A. RAM",
+            "B. Processor",
+            "C. SSD",
+            "D. Monitor"
+        ],
+        "answer": 2,
+        "image": ""
+    },
+    {
+        "question": "Apa yang dimaksud dengan browser?",
+        "options": [
+            "A. Perangkat keras yang berfungsi untuk menghubungkan internet",
+            "B. Program yang digunakan untuk mengakses internet",
+            "C. Jenis sistem operasi komputer",
+            "D. Bahasa pemrograman yang digunakan di web"
+        ],
+        "answer": 1,
+        "image": ""
+    },
+    {
+        "question": "Apa kegunaan dari firewall dalam jaringan komputer?",
+        "options": [
+            "A. Memperbesar jangkauan jaringan",
+            "B. Mempercepat koneksi internet",
+            "C. Melindungi jaringan dari ancaman keamanan",
+            "D. Menghubungkan dua jaringan berbeda"
+        ],
+        "answer": 2,
+        "image": ""
+    },
+    {
+        "question": "Perangkat berikut yang termasuk dalam input device adalah?",
+        "options": [
+            "A. Speaker",
+            "B. Printer",
+            "C. Monitor",
+            "D. Keyboard"
+        ],
+        "answer": 3,
+        "image": ""
+    },
+    {
+        "question": "Bahasa pemrograman yang paling umum digunakan untuk membuat website adalah?",
+        "options": [
+            "A. JavaScript",
+            "B. C++",
+            "C. Python",
+            "D. Java"
+        ],
+        "answer": 0,
+        "image": ""
+    },
+    {
+        "question": "Fungsi utama dari spreadsheet seperti Microsoft Excel adalah?",
+        "options": [
+            "A. Mengedit gambar",
+            "B. Mengelola basis data",
+            "C. Mengolah angka dan data",
+            "D. Mengembangkan aplikasi"
+        ],
+        "answer": 2,
+        "image": ""
+    },
+    {
+        "question": "Apa kepanjangan dari URL?",
+        "options": [
+            "A. Unique Reference Link",
+            "B. User Registration Login",
+            "C. Uniform Resource Locator",
+            "D. Universal Routing Link"
+        ],
+        "answer": 2,
+        "image": ""
+    },
+    {
+        "question": "Apa fungsi utama dari database?",
+        "options": [
+            "A. Menyimpan dan mengelola data",
+            "B. Menampilkan tampilan website",
+            "C. Mengontrol akses internet",
+            "D. Menganalisis data secara otomatis"
+        ],
+        "answer": 0,
+        "image": ""
+    },
+    {
+        "question": "Perangkat yang digunakan untuk menyambungkan komputer ke jaringan internet adalah?",
+        "options": [
+            "A. Router",
+            "B. Keyboard",
+            "C. Monitor",
+            "D. Speaker"
+        ],
+        "answer": 0,
+        "image": ""
+    },
+    {
+        "question": "Jenis memori yang bersifat non-volatile adalah?",
+        "options": [
+            "A. Cache",
+            "B. Register",
+            "C. RAM",
+            "D. ROM"
+        ],
+        "answer": 3,
+        "image": ""
+    },
+    {
+        "question": "Apa yang dimaksud dengan cloud computing?",
+        "options": [
+            "A. Metode enkripsi untuk keamanan data",
+            "B. Sistem operasi berbasis web",
+            "C. Teknologi yang memungkinkan penyimpanan dan pengolahan data di internet",
+            "D. Jenis komputer terbaru yang lebih cepat"
+        ],
+        "answer": 2,
+        "image": ""
+    },
+        {
+            "question": "Di bawah ini adalah beberapa logo bahasa pemrograman. Manakah yang merupakan logo bahasa pemrograman JavaScript?",
+            "options": [
+                {
+                    "option": "A",
+                    "image": "https://logos-world.net/wp-content/uploads/2023/02/JavaScript-Emblem.png"
+                },
+                {
+                    "option": "B",
+                    "image": "https://th.bing.com/th/id/R.e1d424c4b9be7009dd57ef4e7d58e343?rik=EZ8NO5x85jZ0Vg&riu=http%3a%2f%2f1.bp.blogspot.com%2f-NGHwBncyA68%2fUiMm_8b2ZUI%2fAAAAAAAAAnA%2f17OGXCKI4zE%2fs1600%2fLogo%2bHTML5.JPG&ehk=rnVe3RUksYQ4LMnsZ6Xxyf3F5lkj3Br1Eu6vOVCkYh0%3d&risl=&pid=ImgRaw&r=0"
+                },
+                {
+                    "option": "C",
+                    "image": "https://logowik.com/content/uploads/images/flutter7884.jpg"
+                },
+                {
+                    "option": "D",
+                    "image": "https://th.bing.com/th/id/OIP.YPXDR-Giwda93WAPlOk8EAHaGi?rs=1&pid=ImgDetMain"
+                }
+            ],
+            "answer": 0,
+            "image": ""
+        },
+        {
+            "question": "Gambar berikut menunjukkan beberapa perangkat keras komputer. Manakah yang merupakan perangkat output?",
+            "options": [
+                {
+                    "option": "A",
+                    "image": "https://down-id.img.susercontent.com/file/id-11134207-7r98u-lq23pnzunxhs7e"
+                },
+                {
+                    "option": "B",
+                    "image": "https://m.media-amazon.com/images/I/71DYlRN51tL._AC_SL1500_.jpg"
+                },
+                {
+                    "option": "C",
+                    "image": "https://jurnalfakta.com/wp-content/uploads/2020/05/keyboard.png"
+                },
+                {
+                    "option": "D",
+                    "image": "https://th.bing.com/th/id/OIP.gnpy3RKo3AD2U7s75qGWJQHaHa?rs=1&pid=ImgDetMain"
+                }
+            ],
+            "answer": 0,
+            "image": ""
+        },
+        {
+            "question": "Gambar berikut menunjukkan beberapa jenis jaringan komputer. Manakah yang menunjukkan jaringan WAN?",
+            "options": [
+                {
+                    "option": "A",
+                    "image": "https://www.amesbostonhotel.com/wp-content/uploads/2020/10/lan-network.jpg"
+                },
+                {
+                    "option": "B",
+                    "image": "https://th.bing.com/th/id/OIP.C0E88lA7p9EBLdz06uayGwAAAA?rs=1&pid=ImgDetMain"
+                },
+                {
+                    "option": "C",
+                    "image": "https://th.bing.com/th/id/OIP.92y1ewSWyawt19onu7KbkAHaEJ?rs=1&pid=ImgDetMain"
+                },
+                {
+                    "option": "D",
+                    "image": "https://www.amesbostonhotel.com/wp-content/uploads/2020/10/pan-network.jpg"
+                }
+            ],
+            "answer": 1,
+            "image": ""
+        },
+        {
+            "question": "Berikut ini adalah beberapa gambar dari jenis memori komputer. Manakah yang merupakan RAM?",
+            "options": [
+                {
+                    "option": "A",
+                    "image": "https://th.bing.com/th/id/R.fbed71a4897cf3aafa088ccf758e0fe3?rik=cmzXlaTS9HX7Gg&riu=http%3a%2f%2fmedia.idownloadblog.com%2fwp-content%2fuploads%2f2017%2f05%2fIntel-Core-X-i9-chip.jpg&ehk=rhklL9LExsdpdo%2bYypD7srJr7gioj429u%2b6BNi18QCo%3d&risl=&pid=ImgRaw&r=0"
+                },
+                {
+                    "option": "B",
+                    "image": "https://asset.conrad.com/media10/isa/160267/c1/-/en/001911222PI07/image.jpg"
+                },
+                {
+                    "option": "C",
+                    "image": "https://th.bing.com/th/id/OIP.2QeQKZ5s_QHQMLK5COxSzwAAAA?rs=1&pid=ImgDetMain"
+                },
+                {
+                    "option": "D",
+                    "image": "https://th.bing.com/th/id/OIP.xLPqXYWtFI3ySMz4i5yzSQHaDo?rs=1&pid=ImgDetMain"
+                }
+            ],
+            "answer": 3,
+            "image": ""
+        },
+        {
+            "question": "Gambar berikut menunjukkan beberapa ikon aplikasi. Manakah yang merupakan aplikasi pengolah kata?",
+            "options": [
+                {
+                    "option": "A",
+                    "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4c/c9/3c/4cc93c41-d03d-96d8-c3dc-da198c817610/icon.png/1200x630wa.png"
+                },
+                {
+                    "option": "B",
+                    "image": "https://images.datacamp.com/image/upload/v1675703858/Setting_Up_VS_Code_For_Python_Cover_0055feff3d.png"
+                },
+                {
+                    "option": "C",
+                    "image": "https://th.bing.com/th/id/OIP.mncvVRil-T_frWeIGfiRrgHaE8?rs=1&pid=ImgDetMain"
+                },
+                {
+                    "option": "D",
+                    "image": "https://th.bing.com/th/id/OIP.eoEhUznMsdiEJ52p1KWyIQHaEK?rs=1&pid=ImgDetMain"
+                }
+            ],
+            "answer": 0,
+            "image": ""
+        },
+            {
+                "question": "Apa fungsi utama dari sistem operasi dalam komputer?",
+                "options": [
+                    "A. Menghubungkan komputer dengan internet",
+                    "B. Mengatur ",
+                    "C. Menghapus virus dari komputer",
+                    "D. Mengatur sumber daya perangkat keras dan perangkat lunak"
+                ],
+                "answer": 3
+            },
+            {
+                "question": "Manakah di antara berikut yang merupakan perangkat lunak pengolah angka?",
+                "options": [
+                    "A. Microsoft Word",
+                    "B. Adobe Photoshop",
+                    "C. Microsoft Excel",
+                    "D. VLC Media Player"
+                ],
+                "answer": 2,
+                "image": "https://th.bing.com/th/id/OIP.pScu252kVKGhO5wACuKHzQHaE8?rs=1&pid=ImgDetMain"
+            },
+            {
+                "question": "Apa kepanjangan dari HTML?",
+                "options": [
+                    "A. Text bla bla",
+                    "B. High Technology Modern Language",
+                    "C. Hyperlink and Text Management Language",
+                    "D. Hyper Text Markup Language"
+                ],
+                "answer": 3,
+                "image": "https://www.codespot.org/assets/cover/html.png"
+            },
+            {
+                "question": "Manakah di antara berikut yang termasuk dalam perangkat input komputer?",
+                "options": [
+                    "A. Printer",
+                    "B. Monitor",
+                    "C. Mouse",
+                    "D. Speaker"
+                ],
+                "answer": 2
+            },
+            {
+                "question": "Apa fungsi utama dari RAM dalam komputer?",
+                "options": [
+                    "A. Menyimpan data secara permanen",
+                    "B. Memproses grafis dalam komputer",
+                    "C. Menyediakan ruang penyimpanan sementara bagi aplikasi",
+                    "D. Mengontrol daya listrik dalam komputer"
+                ],
+                "answer": 2
+            },
+            {
+                "question": "Manakah ekstensi file yang digunakan untuk menyimpan dokumen Microsoft Word?",
+                "options": [
+                    "A. .xls",
+                    "B. .docx",
+                    "C. .pptx",
+                    "D. .exe"
+                ],
+                "answer": 1
+            },
+            {
+                "question": "Apa kegunaan dari perangkat keras GPU?",
+                "options": [
+                    "A. Menjalankan sistem operasi",
+                    "B. Memproses grafis dan tampilan visual",
+                    "C. Menyimpan file dalam jumlah besar",
+                    "D. Meningkatkan kecepatan internet"
+                ],
+                "answer": 1
+            },
+            {
+                "question": "Perangkat keras yang digunakan untuk mencetak dokumen disebut?",
+                "options": [
+                    "A. Scanner",
+                    "B. Monitor",
+                    "C. Printer",
+                    "D. Keyboard"
+                ],
+                "answer": 2
+            },
+            {
+                "question": "Manakah protokol yang digunakan untuk mengirim email?",
+                "options": [
+                    "A. FTP",
+                    "B. HTTP",
+                    "C. SMTP",
+                    "D. IP"
+                ],
+                "answer": 2
+            },
+            {
+                "question": "Salah satu keuntungan dari penyimpanan cloud adalah?",
+                "options": [
+                    "A. Data bisa diakses dari mana saja dengan internet",
+                    "B. Hanya bisa digunakan di satu perangkat",
+                    "C. Lebih lambat dibandingkan penyimpanan lokal",
+                    "D. Memerlukan perangkat keras tambahan"
+                ],
+                "answer": 0
+            },
+            {
+                "question": "Manakah yang termasuk sistem operasi berbasis open source?",
+                "options": [
+                    "A. Windows 10",
+                    "B. MacOS",
+                    "C. Linux",
+                    "D. iOS"
+                ],
+                "answer": 2
+            },
+            {
+                "question": "Apa kegunaan utama dari firewall dalam jaringan komputer?",
+                "options": [
+                    "A. Meningkatkan kecepatan koneksi internet",
+                    "B. Melindungi sistem dari akses yang tidak sah",
+                    "C. Menyediakan penyimpanan tambahan",
+                    "D. Mempercepat booting sistem operasi"
+                ],
+                "answer": 1
+            },
+            {
+                "question": "Apa kepanjangan dari CPU?",
+                "options": [
+                    "A. Central Processing Unit",
+                    "B. Computer Power Utility",
+                    "C. Central Program Unit",
+                    "D. Core Processing Utility"
+                ],
+                "answer": 0
+            },
+            {
+                "question": "Di bawah ini, manakah yang merupakan bahasa pemrograman?",
+                "options": [
+                    "A. XML",
+                    "B. HTML",
+                    "C. CSS",
+                    "D. Python"
+                ],
+                "answer": 0,
+                "image": "https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2023/04/raspberry-lanza-editor-codigo-aprender-python-lenguaje-ia-3008158.jpg"
+            },
+            {
+                "question": "Manakah yang merupakan format file gambar?",
+                "options": [
+                    "A. .mp3",
+                    "B. .png",
+                    "C. .exe",
+                    "D. .docx"
+                ],
+                "answer": 1
+            }
+        ]
+        
+    
+    

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFORMATIKA KUMER (KAB.BANTUL 2025)</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/webp" href="d723afa8-87c7-4344-8064-11f4e3ab5480.webp">
+    <link rel="stylesheet" href="css/cbt.css">
+</head>
+<body>
+    <div class="container">
+        <div class="user-info" style="display: none;">
+            <img src="https://static.vecteezy.com/system/resources/previews/024/278/339/original/illustration-of-businessman-icon-vector.jpg" alt="User  Icon" style="width: 20px; vertical-align: middle; margin-right: 5px;">
+            <span id="user-name" style="font-size: 1em; color: black;"></span>
+        </div>
+        <div class="header">
+            <span id="time">00:00</span>
+            <div id="question-number">Nomor <span id="current-question">1</span></div>
+            <!-- Tombol untuk mengubah ukuran teks -->
+        </div>
+        <h2 id="question"></h2>
+        <img id="question-image" class="question-image" src="" alt="" style="display: none;">
+        <ul id="options"></ul>
+        <div class="navigation">
+            <button id="back">(<)</button>
+            <button onclick="enterFullscreen()" id="next">(>)</button>
+            <button id="submit" style="display: none;">Kirim (lihat nilai)</button>
+            <div class="text-size-controls">
+                <button id="text-size-toggle">
+                    Ukuran Teks
+                </button>
+                <ul id="text-size-options" style="display: none;">
+                    <li id="increase-text-size">Perbesar (+)</li>
+                    <li id="decrease-text-size">Perkecil (-)</li>
+                </ul>
+            </div>
+
+            <button id="view-questions">Daftar Soal</button>
+        </div>
+        
+        
+        <div class="result" id="result" style="display: none;"></div>
+        <div class="question-list" id="question-list">
+            <h3>Daftar Soal</h3>
+            <ul></ul>
+            <button id="close-list">Tutup</button>
+        </div>
+
+        <!-- Tombol untuk memperbesar dan memperkecil teks -->
+
+    </div>
+    <footer style="background-color: #333; color: #fff; padding: 20px 0; text-align: center;">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;">
+                <!-- Informasi Perusahaan -->
+                <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
+                    <h4 style="margin: 0 0 10px;">Tentang Kami</h4>
+                    <p style="margin: 0;">Kami menyediakan layanan CBT terbaik untuk kebutuhan belajar.</p>
+                </div>
+    
+                <!-- Media Sosial -->
+                <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
+                    <h4 style="margin: 0 0 10px;">ikuti Prompt Engineer</h4>
+                    <div style="display: flex; gap: 10px; justify-content: center;">
+                        <a href="https://www.facebook.com/profile.php?id=100088714771697" target="_blank" style="color: #fff; font-size: 20px; text-decoration: none;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" width="24" height="24">
+                        </a>
+                        <a href="https://www.github.com/YohanesUser" target="_blank" style="color: #fff; font-size: 20px; text-decoration: none;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" width="24" height="24">
+                        </a>
+                        <a href="https://www.instagram.com/yohanes_af_sr" target="_blank" style="color: #fff; font-size: 20px; text-decoration: none;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="24" height="24">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top: 20px;">
+                <img src="https://github.com/YohanesUser/galeri/blob/main/LOGO_TIKUS_PRODUCTION_logo_atas-removebg-preview.png?raw=true" alt="Tikus Production" width="150">
+            </div>
+            <br>
+            <br>
+            <br>
+            <script type="text/javascript" src="https://www.free-counters.org/count/hfpu"></script><br>
+            <a href='https://www.versicherungen.at/cyber-versicherung/'>Cyber-Angriff Versicherung</a> <script type='text/javascript' src='https://whomania.com/ctr?id=3c8e1c47418ec07fcf11507b77d9e70793dee02f'></script>
+    
+            <!-- Hak Cipta -->
+            <div style="margin-top: 20px; border-top: 1px solid #444; padding-top: 10px; font-size: 14px;">
+                <p style="margin: 0;">&copy; 2025 CBT Tikus Production. Semua hak dilindungi.</p>
+                <p>Versi 3.0</p>
+            </div>
+    
+            <!-- Logo Tikus Production -->
+           
+        </div>
+    </footer>
+      
+      <style>
+        /* Reset margin dan padding */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Memastikan tinggi penuh */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Tinggi body mencakup seluruh viewport */
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 16px; /* Pastikan footer selalu di bawah */
+}
+
+/* Menambahkan jarak yang cukup jauh antara footer dan elemen di atasnya */
+.content {
+  margin-bottom: 50px; /* Menambah jarak antara konten dan footer */
+}
+
+@media (min-width: 992px) {
+  footer {
+    padding: 10px 0;
+    font-size: 14px;
+    margin-top: 40px;
+  }
+  footer h4 {
+    font-size: 16px;
+  }
+  footer p {
+    font-size: 12px;
+  }
+}
+
+
+
+      </style>
+
+    <script src="js/question.js"></script>
+
+</body>
+</html>

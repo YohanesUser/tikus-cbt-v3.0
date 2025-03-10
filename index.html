@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CBT Tikus Production</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/webp" href="d723afa8-87c7-4344-8064-11f4e3ab5480.webp">
+    </head>    
+<body>
+    <div class="container">
+        <h1>Login Ke Link</h1>
+        <form id="login-form">
+            <div class="input-container"> <!-- Bisa diganti dengan ikon FontAwesome -->
+                <input type="text" id="name" placeholder="   Masukkan nama Anda" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        
+    </div>
+    <footer style="background-color: #333; color: #fff; padding: 20px 0; text-align: center;">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;">
+                <!-- Informasi Perusahaan -->
+                <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
+                    <h4 style="margin: 0 0 10px;">Tentang Kami</h4>
+                    <p style="margin: 0;">Kami menyediakan layanan CBT terbaik untuk kebutuhan belajar.</p>
+                </div>
+    
+                <!-- Media Sosial -->
+                <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
+                    <h4 style="margin: 0 0 10px;">ikuti Prompt Engineer</h4>
+                    <div style="display: flex; gap: 10px; justify-content: center;">
+                        <a href="https://www.facebook.com/profile.php?id=100088714771697" target="_blank" style="color: #fff; font-size: 20px; text-decoration: none;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" width="24" height="24">
+                        </a>
+                        <a href="https://www.github.com/YohanesUser" target="_blank" style="color: #fff; font-size: 20px; text-decoration: none;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" width="24" height="24">
+                        </a>
+                        <a href="https://www.instagram.com/yohanes_af_sr" target="_blank" style="color: #fff; font-size: 20px; text-decoration: none;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="24" height="24">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top: 20px;">
+                <img src="https://github.com/YohanesUser/galeri/blob/main/LOGO_TIKUS_PRODUCTION_logo_atas-removebg-preview.png?raw=true" alt="Tikus Production" width="150">
+            </div>
+            <br>
+            <br>
+            <br>
+            <script type="text/javascript" src="https://www.free-counters.org/count/hfpu"></script><br>
+            <a href='https://www.versicherungen.at/cyber-versicherung/'>Cyber-Angriff Versicherung</a> <script type='text/javascript' src='https://whomania.com/ctr?id=3c8e1c47418ec07fcf11507b77d9e70793dee02f'></script>
+    
+            <!-- Hak Cipta -->
+            <div style="margin-top: 20px; border-top: 1px solid #444; padding-top: 10px; font-size: 14px;">
+                <p style="margin: 0;">&copy; 2025 CBT Tikus Production. Semua hak dilindungi.</p>
+                <p>Versi 3.0</p>
+            </div>
+    
+            <!-- Logo Tikus Production -->
+           
+        </div>
+    </footer>
+      
+      <style>
+        /* Reset margin dan padding */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%; /* Memastikan tinggi penuh */
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Tinggi body mencakup seluruh viewport */
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 16px;
+            margin-top: 100px; /* Pastikan footer selalu di bawah */
+        }
+
+        /* Menambahkan jarak yang cukup jauh antara footer dan elemen di atasnya */
+        .content {
+            margin-bottom: 50px; /* Menambah jarak antara konten dan footer */
+        }
+
+        @media (min-width: 992px) {
+            footer {
+                padding: 10px 0;
+                font-size: 14px;
+                margin-top: 250px;
+            }
+            footer h4 {
+                font-size: 16px;
+            }
+            footer p {
+                font-size: 12px;
+            }
+        }
+      </style>
+
+    <script>
+        document.getElementById('login-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('name').value.trim();
+
+            // Cek jika nama adalah 'admin1'
+            if (name === 'admin1') {
+                // Redirect ke halaman admin
+                window.location.href = 'admin.html';
+            } else if (name) {
+                // Simpan nama siswa ke sessionStorage
+                sessionStorage.setItem('studentName', name);
+                
+                // Redirect ke dashboard siswa
+                window.location.href = 'dashboard.html';
+            } else {
+                alert('Nama harus diisi');
+            }
+        });
+    </script>
+</body>
+</html>

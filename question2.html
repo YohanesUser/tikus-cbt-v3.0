@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        li:hover {
+            background: rgba(40, 167, 69, 0.2);
+        }
+
+        li.selected {
+            background: #28a745;
+            color: #fff;
+        }
+
+        button {
+            background: #28a745;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s ease;
+            margin: 20px 5px;
+        }
+
+        button:hover {
+            background: #218838;
+            transform: scale(1.05);
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+
+        .result {
+            font-size: 1.5em;
+            margin-top: 20px;
+            color: #28a745;
+        }
+
+        .question-list {
+            display: none;
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .question-list ul {
+            padding-left: 0;
+        }
+
+        .question-list li {
+            margin: 5px 0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span id="time">60:00</span>
+            <div id="question-number">Question <span id="current-question">1</span></div>
+        </div>
+        <h2 id="question"></h2>
+        <ul id="options"></ul>
+        <div class="navigation">
+            <button id="back">Back</button>
+            <button id="next">Next</button>
+            <button id="submit" style="display: none;">Submit</button>
+            <button id="view-questions">Daftar Soal</button>
+        </div>
+        <div class="result" id="result" style="display: none;"></div>
+        <div class="question-list" id="question-list">
+            <h3>Daftar Soal</h3>
+            <ul></ul>
+            <button id="close-list">Tutup</button>
+        </div>
+    </div>
+
+    <script>
+    const mathQuestionsTK = [
+    { "question": "7 + 5 = ?", "options": ["10", "11", "12", "13"], "answer": 2 },
+    { "question": "8 + 6 = ?", "options": ["12", "13", "14", "15"], "answer": 3 },
+    { "question": "9 + 3 = ?", "options": ["11", "12", "13", "14"], "answer": 1 },
+    { "question": "5 + 7 = ?", "options": ["10", "11", "12", "13"], "answer": 2 },
+    { "question": "6 + 4 = ?", "options": ["10", "11", "12", "9"], "answer": 0 },
+    { "question": "3 + 9 = ?", "options": ["10", "11", "12", "13"], "answer": 1 },
+    { "question": "4 + 8 = ?", "options": ["11", "12", "13", "14"], "answer": 1 },
+    { "question": "2 + 7 = ?", "options": ["8", "9", "10", "11"], "answer": 1 },
+    { "question": "5 + 5 = ?", "options": ["10", "11", "12", "9"], "answer": 0 },
+    { "question": "7 + 8 = ?", "options": ["13", "14", "15", "16"], "answer": 2 },
+    { "question": "8 + 9 = ?", "options": ["16", "17", "18", "19"], "answer": 1 },
+    { "question": "6 + 6 = ?", "options": ["11", "12", "13", "14"], "answer": 1 },
+    { "question": "7 + 9 = ?", "options": ["15", "16", "17", "18"], "answer": 1 },
+    { "question": "3 + 8 = ?", "options": ["10", "11", "12", "13"], "answer": 1 },
+    { "question": "4 + 7 = ?", "options": ["10", "11", "12", "13"], "answer": 1 },
+    { "question": "9 + 5 = ?", "options": ["13", "14", "15", "16"], "answer": 2 },
+    { "question": "6 + 7 = ?", "options": ["12", "13", "14", "15"], "answer": 3 },
+    { "question": "2 + 9 = ?", "options": ["10", "11", "12", "13"], "answer": 1 },
+    { "question": "3 + 7 = ?", "options": ["9", "10", "11", "12"], "answer": 2 },
+    { "question": "8 + 4 = ?", "options": ["11", "12", "13", "14"], "answer": 1 },
+    { "question": "5 + 8 = ?", "options": ["12", "13", "14", "15"], "answer": 2 },
+    { "question": "4 + 9 = ?", "options": ["12", "13", "14", "15"], "answer": 1 },
+    { "question": "7 + 6 = ?", "options": ["12", "13", "14", "15"], "answer": 2 },
+    { "question": "3 + 6 = ?", "options": ["8", "9", "10", "11"], "answer": 1 },
+    { "question": "2 + 8 = ?", "options": ["9", "10", "11", "12"], "answer": 1 },
+    { "question": "5 + 9 = ?", "options": ["13", "14", "15", "16"], "answer": 2 },
+    { "question": "6 + 8 = ?", "options": ["13", "14", "15", "16"], "answer": 2 },
+    { "question": "7 + 5 = ?", "options": ["10", "11", "12", "13"], "answer": 2 },
+    { "question": "9 + 2 = ?", "options": ["10", "11", "12", "13"], "answer": 1 },
+    { "question": "3 + 5 = ?", "options": ["7", "8", "9", "10"], "answer": 1 },
+    { "question": "4 + 6 = ?", "options": ["9", "10", "11", "12"], "answer": 1 }
+];
+
+
+        let timeRemaining = 60 * 60; // 1 jam dalam detik
+        let timerInterval = setInterval(() => {
+            timeRemaining -= 1;
+            document.getElementById('time').textContent = formatTime(timeRemaining);
+            if (timeRemaining <= 0) {
+                clearInterval(timerInterval);
+                alert('Waktu habis! Soal akan disubmit.');
+                submitQuiz(); // Submit otomatis saat waktu habis
+            }
+        }, 1000);
+
+        function formatTime(seconds) {
+            const minutes = Math.floor(seconds / 60);
+            const secondsRemaining = seconds % 60;
+            return `${minutes}:${secondsRemaining.toString().padStart(2, '0')}`;
+        }
+
+        let currentPage = 1;
+        const selectedAnswers = new Array(questions.length).fill(null);
+
+        document.getElementById('current-question').textContent = currentPage;
+
+        function loadQuestion() {
+            const questionData = questions[currentPage - 1];
+            document.getElementById('question').textContent = questionData.question;
+
+            const optionsElement = document.getElementById('options');
+            optionsElement.innerHTML = '';
+            questionData.options.forEach((option, index) => {
+                const li = document.createElement('li');
+                li.textContent = option;
+                li.addEventListener('click', () => selectOption(index));
+                if (selectedAnswers[currentPage - 1] === index) {
+                    li.classList.add('selected');
+                }
+                optionsElement.appendChild(li);
+            });
+
+            document.getElementById('next').style.display = (currentPage === questions.length) ? 'none' : 'inline-block';
+            document.getElementById('submit').style.display = (currentPage === questions.length) ? 'inline-block' : 'none';
+        }
+
+        function selectOption(index) {
+            selectedAnswers[currentPage - 1] = index;
+            loadQuestion();
+        }
+
+        document.getElementById('next').addEventListener('click', () => {
+            if (currentPage < questions.length) {
+                currentPage++;
+                document.getElementById('current-question').textContent = currentPage;
+                loadQuestion();
+            }
+        });
+
+        document.getElementById('back').addEventListener('click', () => {
+            if (currentPage > 1) {
+                currentPage--;
+                document.getElementById('current-question').textContent = currentPage;
+                loadQuestion();
+            }
+        });
+
+        document.getElementById('submit').addEventListener('click', submitQuiz);
+
+        function submitQuiz() {
+            clearInterval(timerInterval);
+            const score = selectedAnswers.reduce((acc, answer, index) => {
+                return answer === questions[index].answer ? acc + 1 : acc;
+            }, 0);
+            const totalQuestions = questions.length;
+            const percentage = (score / totalQuestions) * 100; // Hitung persentase
+
+            // Tampilkan hasil dan persentase
+            document.getElementById('result').innerHTML = `Skor Anda: ${score} dari ${totalQuestions} (${percentage.toFixed(2)}%)`;
+            document.getElementById('result').style.display = 'block';
+            document.querySelector('.navigation').style.display = 'none'; // Sembunyikan tombol navigasi setelah pengiriman
+
+            // Delay 3 detik sebelum mengirim nilai ke WhatsApp
+            setTimeout(() => {
+                const phoneNumber = "6289530067456"; // Nomor WhatsApp tujuan
+                const message = `Nilai ( Masukkan Nama Anda ) adalah: ${score} dari ${totalQuestions} (${percentage.toFixed(2)}%)`;
+                const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+                // Buka URL WhatsApp
+                window.open(whatsappURL, '_blank');
+            }, 3000); // Delay 3000ms (3 detik)
+        }
+
+        // Load pertanyaan pertama saat halaman dimuat
+        loadQuestion();
+
+        // Tampilkan daftar soal
+        document.getElementById('view-questions').addEventListener('click', () => {
+            const questionListElement = document.getElementById('question-list');
+            const questionListUl = questionListElement.querySelector('ul');
+            questionListUl.innerHTML = '';
+
+            questions.forEach((_, index) => {
+                const li = document.createElement('li');
+                li.textContent = `Soal ${index + 1}: ${selectedAnswers[index] !== null ? 'Jawaban dipilih' : 'Belum dijawab'}`;
+                li.addEventListener('click', () => {
+                    currentPage = index + 1;
+                    document.getElementById('current-question').textContent = currentPage;
+                    loadQuestion();
+                    questionListElement.style.display = 'none'; // Sembunyikan daftar soal setelah memilih
+                });
+                questionListUl.appendChild(li);
+            });
+
+            questionListElement.style.display = 'block';
+        });
+
+        // Tutup daftar soal
+        document.getElementById('close-list').addEventListener('click', () => {
+            document.getElementById('question-list').style.display = 'none';
+        });
+    </script>
+</body>
+</html>

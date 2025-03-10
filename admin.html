@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Container utama */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        /* Style untuk tabel */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            overflow-x: auto;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            word-wrap: break-word;
+        }
+
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* Style untuk tombol */
+        button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        .form-container {
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+        }
+
+        label, input {
+            display: block;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+        input[type="text"], input[type="password"] {
+            padding: 10px;
+            width: calc(100% - 22px); /* Lebar input agar pas */
+        }
+
+        /* Style untuk textarea */
+        textarea {
+            width: 100%;
+            height: 150px; /* Ukuran tinggi textarea */
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: none; /* Mencegah ukuran diubah */
+        }
+
+        /* Responsive untuk HP */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            th, td {
+                padding: 10px;
+            }
+
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+        }
+
+        /* Responsive untuk layar lebih kecil */
+        @media (max-width: 480px) {
+            button {
+                padding: 8px 16px;
+            }
+
+            th, td {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Admin Dashboard</h1>
+
+        <!-- Bagian Daftar Siswa -->
+        <h2>Daftar Siswa</h2>
+        <table id="student-table">
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Password</th>
+                    <th>Token</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Konten tabel akan diisi oleh JavaScript -->
+            </tbody>
+        </table>
+
+        <!-- Form untuk menambahkan siswa -->
+        <div class="form-container">
+            <h2>Tambah Siswa Baru</h2>
+            <form id="add-student-form">
+                <label for="new-username">Username:</label>
+                <input type="text" id="new-username" required>
+
+                <label for="new-password">Password:</label>
+                <input type="password" id="new-password" required>
+
+                <button type="submit">Tambah Siswa</button>
+            </form>
+        </div>
+
+        <!-- Kolom teks besar di bagian bawah -->
+        <div class="form-container">
+            <h11>token:</h1>
+            <h2>IUEDGS</h2>
+        </div>
+    </div>
+
+    <!-- Bagian Jadwal Ujian -->
+    <h2>Jadwal Ujian</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Mata Pelajaran</th>
+                <th>Tanggal Ujian</th>
+                <th>Waktu Ujian</th>
+                <th>Jumlah Soal</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Pendidikan Pancasila</td>
+                <td>30-12-2024</td>
+                <td>35 Menit</td>
+                <td>50 Soal</td>
+                <td>Active</td>
+            </tr>
+            <tr>
+                <td>PROJOTAMANSARI</td>
+                <td>30-12-2024</td>
+                <td>15 Menit</td>
+                <td>20 Soal</td>
+                <td>Active</td>
+            </tr>
+            <tr>
+                <td>No Input</td>
+                <td>No Input</td>
+                <td>No Input</td>
+                <td>NO Input</td>
+                <td>inactive</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        // Mendapatkan data siswa dari localStorage atau menggunakan data default
+        let students = JSON.parse(localStorage.getItem('students')) || [
+            { username: 'iqbal', password: 'infomancing', token: generateToken() },
+            { username: 'tian', password: 'infomancing', token: generateToken() },
+            { username: 'admin', password: 'admin', token: generateToken() },
+            { username: 'lisa', password: 'lisa2023', token: generateToken() },
+            { username: 'ferdi', password: 'ferdi2023', token: generateToken() },
+            { username: 'awang', password: 'kanisius', token: generateToken() },
+            { username: 'bondan', password: 'kanisius', token: generateToken() },
+            { username: 'cello', password: 'kanisius', token: generateToken() },
+            { username: 'zovin', password: 'kanisius', token: generateToken() },
+            { username: 'bagus', password: 'kanisius', token: generateToken() },
+            { username: 'doyok', password: 'kanisius', token: generateToken() },
+            { username: 'tara', password: 'kanisius', token: generateToken() },
+            { username: 'yohan', password: 'kanisus', token: generateToken() },
+            { username: 'farel', password: 'kanisius', token: generateToken() },
+            { username: 'ferdi', password: 'kanisius', token: generateToken() },
+            { username: 'rapel', password: 'iwakkalen', token: generateToken() },
+            { username: 'noel', password: 'kanisius', token: generateToken() },
+            { username: 'yoan', password: 'kanisius', token: generateToken() },
+        ];
+
+        // Fungsi untuk menghasilkan token acak
+        function generateToken() {
+            return Math.random().toString(36).substring(2, 8).toUpperCase(); // Menghasilkan token 6 huruf
+        }
+
+        // Fungsi untuk mengisi tabel dengan data siswa
+        function populateTable() {
+            const tableBody = document.querySelector('#student-table tbody');
+            tableBody.innerHTML = ''; // Bersihkan konten tabel sebelum diisi
+
+            students.forEach((student, index) => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${student.username}</td>
+                    <td>${student.password}</td>
+                    <td>${student.token}</td> <!-- Tampilkan token di kolom baru -->
+                    <td>
+                        <button onclick="editStudent(${index})">Edit</button>
+                        <button onclick="deleteStudent(${index})">Hapus</button>
+                    </td>
+                `;
+                tableBody.appendChild(row);
+            });
+
+            // Simpan data ke localStorage setiap kali tabel diperbarui
+            localStorage.setItem('students', JSON.stringify(students));
+        }
+
+        // Fungsi untuk mengedit siswa
+        function editStudent(index) {
+            const newUsername = prompt('Masukkan username baru:', students[index].username);
+            const newPassword = prompt('Masukkan password baru:', students[index].password);
+
+            if (newUsername && newPassword) {
+                students[index].username = newUsername;
+                students[index].password = newPassword;
+                populateTable();
+            }
+        }
+
+        // Fungsi untuk menghapus siswa
+        function deleteStudent(index) {
+            students.splice(index, 1); // Hapus siswa dari array
+            populateTable(); // Perbarui tampilan tabel
+        }
+
+        // Fungsi untuk menambahkan siswa baru
+        document.getElementById('add-student-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Mencegah halaman direfresh
+
+            const newUsername = document.getElementById('new-username').value;
+            const newPassword = document.getElementById('new-password').value;
+
+            students.push({ username: newUsername, password: newPassword, token: generateToken() });
+            populateTable();
+
+            // Kosongkan form setelah menambahkan siswa baru
+            document.getElementById('new-username').value = '';
+            document.getElementById('new-password').value = '';
+        });
+
+        // Fungsi untuk memperbarui token semua siswa
+        function updateTokens() {
+            students.forEach(student => {
+                student.token = generateToken();
+            });
+            populateTable();
+        }
+
+        // Panggil fungsi saat halaman dimuat
+        document.addEventListener('DOMContentLoaded', () => {
+            populateTable();
+            setInterval(updateTokens, 5 * 60 * 1000); // Perbarui token setiap 5 menit
+        });
+    </script>
+
+</body>
+</html>

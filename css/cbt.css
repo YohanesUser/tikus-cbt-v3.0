@@ -1,0 +1,434 @@
+body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://patalan.bantulkab.go.id/assets/files/artikel/sedang_1554438091Logo%20Kabupaten%20Bantul.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h2 {
+    font-size: 1.2em; /* Membuat ukuran font lebih besar */
+    color: #000000; /* Warna teks yang kontras dan mudah dibaca */
+    font-weight: bolder; /* Menebalkan teks */
+    margin-bottom: 20px; /* Memberikan jarak bawah agar tidak terlalu rapat dengan konten lainnya */
+    text-align: center; /* Menyelaraskan teks di tengah */
+   
+    
+}
+
+
+        .question-image {
+            max-width: 100%;
+            margin: 20px auto;
+            display: block;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        /* Gaya untuk tombol pilihan soal */
+        li {
+    margin: 10px 0;
+    cursor: pointer;
+    padding: 15px 20px;
+    border-radius: 10px;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
+    background: #f8f9fa; /* Warna latar belakang default */
+    border: 2px solid #fcfeff; /* Warna border default */
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #000000; /* Warna teks default */
+    display: block; /* Pastikan li memenuhi lebar penuh */
+    width: 100%; /* Membuat li lebar penuh */
+    box-sizing: border-box; /* Memastikan padding dan border dihitung dalam lebar elemen */
+}
+
+li:hover {
+    background: #1d8ecf; /* Warna latar saat hover */
+    color: #000000; /* Warna teks saat hover */
+    transform: scale(1.05); /* Efek memperbesar saat hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+}
+
+li.selected {
+    background: #1d8ecf; /* Warna latar untuk opsi yang dipilih */
+    color: #000000; /* Warna teks untuk opsi yang dipilih */
+    border-color: #1d8ecf; /* Warna border untuk opsi yang dipilih */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+}
+
+/* Gaya gambar dalam opsi */
+.option-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto; /* Menyelaraskan gambar di tengah */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Efek bayangan gambar */
+}
+
+
+
+        button {
+            background: #1d8ecf;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s ease;
+            margin: 20px 5px;
+        }
+
+        button:hover {
+            background: #218838;
+            transform: scale(1);
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+
+        .result {
+            font-size: 1.5em;
+            margin-top: 20px;
+            color: #1d8ecf;
+        }
+
+        .question-list {
+            display: none;
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .question-list ul {
+            padding-left: 0;
+        }
+
+        .question-list li {
+            margin: 5px 0;
+            cursor: pointer;
+        }
+
+        /* Zoom class for the image */
+        .zoomed {
+            transform: scale(2);
+        }
+        .option-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0; /* Memberikan jarak antara gambar dan teks */
+}
+
+.text-size-controls {
+    position: relative;
+    display: inline-block;
+    margin-top: 0px; /* Mengurangi jarak atas */
+    margin-bottom: 0px; /* Mengurangi jarak bawah */
+    margin-left: auto; /* Menempatkan elemen di sisi kanan */
+}
+
+#text-size-toggle {
+    background-color: #1d8ecf;
+    color: #fff;
+    border: none;
+    padding: 4px 8px; /* Mengurangi padding tombol untuk jarak lebih dekat */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8em; /* Mengurangi ukuran font pada tombol */
+    transition: background-color 0.3s ease;
+}
+
+#text-size-toggle {
+    background-color: #1d8ecf;
+    color: #fff;
+    border: none;
+    padding: 10px 20px; /* Menyesuaikan padding sesuai permintaan */
+    border-radius: 5px; /* Membuat sudut tombol melengkung */
+    font-size: 1.1em; /* Ukuran font tombol sesuai dengan permintaan */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 20px 5px; /* Menambahkan margin untuk jarak antar elemen */
+}
+
+#text-size-toggle:hover {
+    background-color: #218838; /* Mengubah warna tombol saat hover */
+    transform: scale(1.05); /* Efek pembesaran saat hover */
+}
+
+#text-size-toggle:active {
+    transform: scale(0.95); /* Efek pengecilan tombol saat aktif */
+}
+
+
+#text-size-toggle:hover {
+    background-color: #082346;
+}
+
+#text-size-options {
+    position: absolute;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    top: 30px; /* Menempatkan pilihan di bawah tombol */
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 1;
+}
+
+#text-size-options li {
+    padding: 4px 8px; /* Mengurangi padding pada menu untuk jarak lebih dekat */
+    cursor: pointer;
+    background-color: #f9f9f9;
+    font-size: 0.9em; /* Mengurangi ukuran font pada menu */
+}
+
+#text-size-options li:hover {
+    background-color: #f1f1f1;
+}
+
+/* Mengatur scrollbar untuk seluruh halaman */
+::-webkit-scrollbar {
+    width: 20px;  /* Lebar scrollbar yang lebih besar */
+    height: 20px; /* Tinggi scrollbar horizontal */
+}
+
+/* Gaya untuk track scrollbar dengan background transparan */
+::-webkit-scrollbar-track {
+    background: transparent;  /* Background transparan */
+    border-radius: 10px;       /* Sudut melengkung pada track */
+}
+
+/* Gaya untuk thumb scrollbar (bagian yang bergerak) */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #FF6F61, #FF9A8B, #F4A300);  /* Warna cerah seperti permen */
+    border-radius: 10px;         /* Sudut melengkung pada thumb */
+    border: 4px solid transparent;  /* Jarak antara thumb dan track */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;  /* Transisi efek */
+}
+
+/* Efek saat hover pada thumb */
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, #FFB6C1, #FFD700, #F1C40F);  /* Perubahan warna saat hover */
+    transform: scale(1.2);       /* Membesarkan thumb */
+    box-shadow: 0 0 15px rgba(255, 105, 180, 0.8);  /* Bayangan yang cerah */
+}
+
+/* Efek klik pada thumb */
+::-webkit-scrollbar-thumb:active {
+    background: linear-gradient(45deg, #6A5ACD, #FF6347, #32CD32);   /* Warna berubah saat klik */
+    transform: scale(1.1);        /* Sedikit memperkecil saat klik */
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);  /* Bayangan dalam saat klik */
+}
+
+/* Menambahkan gaya untuk scrollbar di Firefox */
+* {
+    scrollbar-width: thin;            /* Menentukan lebar scrollbar */
+    scrollbar-color: #FF6F61 transparent;  /* Menentukan warna thumb dan track */
+}
+
+/* Efek animasi perubahan warna RGB setiap 3 detik */
+@keyframes candyColorChange {
+    0% { background-color: #FF6F61; } /* Warna awal merah cerah */
+    25% { background-color: #FF9A8B; } /* Warna pink cerah */
+    50% { background-color: #F4A300; } /* Warna kuning cerah */
+    75% { background-color: #FFB6C1; } /* Warna peach lembut */
+    100% { background-color: #FFD700; } /* Warna emas */
+}
+
+/* Menambahkan animasi ke thumb untuk perubahan warna */
+::-webkit-scrollbar-thumb {
+    animation: candyColorChange 3s infinite;  /* Warna thumb berubah setiap 3 detik */
+}
+
+/* Scrollbar horizontal (untuk konten yang dapat digulir secara horizontal) */
+::-webkit-scrollbar-horizontal {
+    height: 20px;  /* Lebar scrollbar horizontal lebih besar */
+}
+
+/* Penyesuaian di perangkat mobile */
+@media (max-width: 600px) {
+    ::-webkit-scrollbar {
+        width: 30px;  /* Lebar scrollbar lebih besar di layar kecil */
+        height: 30px; /* Lebar scrollbar horizontal lebih besar */
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: linear-gradient(45deg, #FF6F61, #FF9A8B, #F4A300);  /* Warna cerah seperti permen */
+        border-radius: 15px;  /* Membuat thumb lebih besar */
+    }
+
+    /* Scrollbar lebih besar saat hover */
+    ::-webkit-scrollbar-thumb:hover {
+        transform: scale(1.3);  /* Membesarkan lebih banyak */
+    }
+}
+
+#next {
+    position: fixed;
+    bottom: 20px;  /* Jarak dari bawah halaman */
+    padding: 10px 20px;
+    background-color: #0022e6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 1000;
+    display: block; /* Pastikan tombol tampil di semua perangkat */
+}
+
+#submit {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%; /* Membuat tombol lebih panjang */
+    max-width: 500px; /* Batas maksimal lebar tombol */
+    padding: 18px 0;
+    background: linear-gradient(135deg, #ff4e50, #ff9a8b);
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 3px solid #d90000;
+    border-radius: 50px;
+    cursor: pointer;
+    z-index: 1000;
+    display: block;
+    box-shadow: 0 8px 20px rgba(255, 78, 80, 0.6);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Efek Hover */
+#submit:hover {
+    background: linear-gradient(135deg, #ff9a8b, #ff4e50);
+    box-shadow: 0 10px 25px rgba(255, 78, 80, 0.8);
+    transform: translate(-50%, -50%) scale(1.05);
+}
+
+/* Efek saat ditekan */
+#submit:active {
+    transform: translate(-50%, -50%) scale(0.95);
+    box-shadow: 0 5px 15px rgba(255, 78, 80, 0.4);
+}
+
+/* Responsif untuk layar besar (PC) */
+@media (min-width: 992px) {
+    #submit {
+        width: 50%;  /* Sedikit lebih kecil di layar besar */
+        font-size: 26px;
+        padding: 16px 0;
+    }
+}
+
+/* Responsif untuk layar lebih kecil (mobile) */
+@media (max-width: 991px) {
+    #submit {
+        width: 80%;  /* Lebih panjang di layar kecil */
+        font-size: 22px;
+        padding: 14px 0;
+    }
+}
+
+
+
+
+#back{
+    position: fixed;
+    bottom: 20px;  /* Jarak dari bawah halaman */
+    padding: 10px 20px;
+    background-color: #00ff2a;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 1000;
+    display: block; /* Pastikan tombol tampil di semua perangkat */
+}
+
+#next {
+    right: 20px;  /* Jarak dari kanan halaman */
+}
+
+#submit {
+    right: 50px
+}
+
+#back {
+    left: 20px;   /* Jarak dari kiri halaman */
+}
+
+@media (min-width: 992px) {
+    #next, #back {
+        bottom: calc(20px + 50px); /* Pastikan tombol berada di atas footer */
+    }
+}
+
+
+
+
+
+
+
+.user-info {
+    position: fixed; /* Menggunakan fixed agar tetap di tempat saat scroll */
+    top: 0; /* Jarak dari atas */
+    left: 50%; /* Menempatkan di tengah horizontal */
+    transform: translateX(-50%); /* Menggeser elemen ke kiri setengah lebar elemen untuk benar-benar berada di tengah */
+    color: black; /* Warna teks hitam */
+    display: flex; /* Menggunakan flexbox untuk menyelaraskan logo dan teks */
+    align-items: center; /* Menyelaraskan item secara vertikal */
+    z-index: 1000; /* Pastikan elemen ini di atas elemen lain */
+    padding: 10px; /* Memberikan sedikit padding */
+    background-color: white; /* Latar belakang putih */
+    border: 1px solid #ccc; /* Border abu-abu muda */
+    border-radius: 5px; /* Sudut melengkung */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan halus untuk efek kedalaman */
+}
+
+.no-copy {
+    user-select: none; /* Mencegah pemilihan teks */
+    -webkit-user-select: none; 
+    -moz-user-select: none;
+    -ms-user-select: none;
+    pointer-events: none; /* Mencegah interaksi dengan mouse */
+}
+
+.no-select {
+    user-select: none; /* Mencegah pemilihan teks */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
