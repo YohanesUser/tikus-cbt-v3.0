@@ -152,7 +152,7 @@ if (userName) {
 }
 
 // Timer untuk kuis
-let timeRemaining = 30 * 60;
+let timeRemaining = 25 * 60;
 let timerInterval = setInterval(() => {
     timeRemaining -= 1;
     document.getElementById('time').textContent = formatTime(timeRemaining);
