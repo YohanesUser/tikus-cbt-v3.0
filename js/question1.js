@@ -1,8 +1,9 @@
 let questions = [];
 
+// Fungsi untuk memuat pertanyaan dari file JSON
 async function loadQuestions() {
     try {
-        const response = await fetch("../data/questions1.json");
+        const response = await fetch("../data/questions.json");
         if (!response.ok) throw new Error("Gagal memuat data!");
 
         questions = await response.json();
@@ -12,6 +13,28 @@ async function loadQuestions() {
         console.error("Error:", error);
     }
 }
+
+// Fungsi untuk memuat pertanyaan saat ini
+function loadQuestion() {
+    // Implementasi untuk memuat pertanyaan
+}
+
+// Peringatan saat ingin meninggalkan halaman
+window.addEventListener('beforeunload', function (e) {
+    // Memutar bunyi peringatan
+    const alertSound = document.getElementById('alert-sound');
+    alertSound.play(); // Memutar bunyi
+
+    // Pesan peringatan
+    const confirmationMessage = "Anda yakin ingin meninggalkan halaman ini? Semua jawaban yang belum disimpan akan hilang.";
+    
+    // Untuk beberapa browser, Anda perlu mengatur returnValue
+    e.returnValue = confirmationMessage; // Standar
+    return confirmationMessage; // Beberapa browser mungkin memerlukan ini
+});
+
+// Panggil fungsi untuk memuat pertanyaan saat halaman dimuat
+loadQuestions();
 
 function loadQuestion() {
     if (questions.length > 0) {
