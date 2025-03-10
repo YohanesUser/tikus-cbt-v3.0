@@ -2,7 +2,7 @@ let questions = [];
 
 async function loadQuestions() {
     try {
-        const response = await fetch("../data/questions.json");
+        const response = await fetch("../data/questions1.json");
         if (!response.ok) throw new Error("Gagal memuat data!");
 
         questions = await response.json();
