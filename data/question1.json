@@ -1,0 +1,499 @@
+[
+    {
+        "question": "Apa yang dimaksud dengan apresiasi dalam jurnal visual?",
+        "options": [
+            "A. Menilai dan menghargai karya jurnal visual",
+            "B. Membuat jurnal visual setiap hari",
+            "C. Menggambar tanpa tujuan tertentu",
+            "D. Menyalin gambar dari buku lain"
+        ],
+        "answer": 0,
+        "image": ""
+    },
+    {
+        "question": "Apa tujuan utama dari apresiasi jurnal visual?",
+        "options": [
+            "A. Mengembangkan pemahaman seni dan ekspresi kreatif",
+            "B. Menyalin karya orang lain",
+            "C. Menghafal berbagai teknik menggambar",
+            "D. Mengikuti tren jurnal visual"
+        ],
+        "answer": 0,
+        "image": ""
+    },
+    {
+        "question": "Apa langkah pertama dalam membuat jurnal visual?",
+        "options": [
+            "A. Menggambar tanpa rencana",
+            "B. Memilih tema dan tujuan",
+            "C. Mewarnai latar belakang",
+            "D. Menyalin jurnal teman"
+        ],
+        "answer": 1,
+        "image": ""
+    },
+    {
+        "question": "Apa saja elemen yang umumnya ada dalam jurnal visual?",
+        "options": [
+            "A. Hanya gambar",
+            "B. Hanya teks",
+            "C. Warna, garis, teks, dan gambar",
+            "D. Tidak ada elemen khusus"
+        ],
+        "answer": 2,
+        "image": ""
+    },
+    {
+        "question": "Apa yang bisa menjadi contoh jurnal visual?",
+        "options": [
+            "A. Buku cetak dengan banyak gambar",
+            "B. Buku pelajaran yang penuh tulisan",
+            "C. Daftar tugas harian",
+            "D. Sketsa harian, catatan perjalanan, dan ilustrasi konsep"
+        ],
+        "answer": 3,
+        "image": ""
+    },
+    {
+        "question": "Aspek apa yang perlu diperhatikan dalam jurnal visual?",
+        "options": [
+            "A. Hanya kerapihan tulisan",
+            "B. Warna dan garis tanpa aturan",
+            "C. Memenuhi halaman dengan gambar tanpa arti",
+            "D. Komposisi, keseimbangan, dan kesatuan"
+        ],
+        "answer": 3,
+        "image": ""
+    },
+    {
+        "question": "Bagaimana cara memilih tema dalam jurnal visual?",
+        "options": [
+            "A. Meniru tema dari orang lain",
+            "B. Memilih tema yang sedang tren",
+            "C. Berdasarkan minat pribadi dan tujuan ekspresi",
+            "D. Tidak perlu memilih tema"
+        ],
+        "answer": 2,
+        "image": ""
+    },
+    {
+        "question": "Apa manfaat dari membuat jurnal visual?",
+        "options": [
+            "A. Meningkatkan hafalan pelajaran",
+            "B. Meniru karya orang lain",
+            "C. Hanya untuk hiburan",
+            "D. Melatih kreativitas dan refleksi diri"
+        ],
+        "answer": 3,
+        "image": ""
+    },
+    {
+        "question": "Mengapa refleksi penting dalam jurnal visual?",
+        "options": [
+            "A. Agar jurnal tampak lebih rapi",
+            "B. Supaya bisa meniru karya yang lebih bagus",
+            "C. Tidak ada alasan khusus",
+            "D. Untuk mengevaluasi perkembangan dan perasaan yang dituangkan"
+        ],
+        "answer": 3,
+        "image": ""
+    },
+    {
+        "question": "Apa perbedaan jurnal visual dengan buku harian dan buku gambar?",
+        "options": [
+            "A. Jurnal visual hanya digunakan untuk tugas sekolah",
+            "B. Tidak ada perbedaan",
+            "C. Jurnal visual menggabungkan teks dan gambar untuk refleksi",
+            "D. Buku harian hanya berisi teks, buku gambar hanya berisi sketsa"
+        ],
+        "answer": 2,
+        "image": ""
+    },
+    {
+        "question": "Langkah-langkah apa yang diperlukan untuk membuat jurnal visual?",
+        "options": [
+            "A. Menggambar tanpa aturan",
+            "B. Menentukan tema, mengumpulkan referensi, membuat sketsa, menambahkan warna dan teks",
+            "C. Menggunakan aplikasi digital tanpa ide awal",
+            "D. Hanya menggunakan tulisan tanpa visual"
+        ],
+        "answer": 1,
+        "image": ""
+    },
+    {
+        "question": "Bagaimana langkah-langkah mengapresiasi karya jurnal visual?",
+        "options": [
+            "A. Hanya memberikan pujian tanpa analisis",
+            "B. Mengkritik tanpa alasan",
+            "C. Menyalin karya tanpa izin",
+            "D. Mengamati, menganalisis, menilai, dan memberikan tanggapan"
+        ],
+        "answer": 3,
+        "image": ""
+    },
+    {
+        "question": "Apa itu rutinitas berpikir visibel dalam jurnal visual?",
+        "options": [
+            "A. Berpikir dalam hati tanpa menuliskannya",
+            "B. Hanya menggambar tanpa berpikir",
+            "C. Menyalin tanpa refleksi",
+            "D. Proses berpikir yang dituangkan dalam bentuk visual"
+        ],
+        "answer": 3,
+        "image": ""
+    },
+    {
+        "question": "Apa yang dimaksud dengan tangga umpan balik dalam apresiasi karya?",
+        "options": [
+            "A. Menilai karya hanya dari segi visual",
+            "B. Mengkritik tanpa dasar",
+            "C. Memberikan umpan balik tanpa melihat karya",
+            "D. Proses bertahap dalam memberikan tanggapan terhadap karya"
+        ],
+        "answer": 3,
+        "image": ""
+    },
+    {
+        "question": "Apa yang dimaksud dengan jurnal visual?",
+        "options": [
+            "A. Buku yang hanya berisi tulisan",
+            "B. Catatan yang menggabungkan gambar, teks, dan elemen visual lainnya",
+            "C. Kumpulan gambar tanpa makna",
+            "D. Buku khusus untuk mencatat tugas harian"
+        ],
+        "answer": 1,
+        "image": ""
+    },
+    {
+        "question": "Mengapa jurnal visual penting dalam apresiasi seni?",
+        "options": [
+            "A. Karena jurnal visual hanya digunakan untuk pameran",
+            "B. Sebagai media untuk mengekspresikan ide dan perasaan",
+            "C. Untuk menyalin karya seni yang ada",
+            "D. Karena jurnal visual adalah tren terbaru"
+        ],
+        "answer": 1,
+        "image": ""
+    },
+    {
+        "question": "Apa tujuan utama apresiasi jurnal visual?",
+        "options": [
+            "A. Menilai dan memahami makna karya seni",
+            "B. Menggambar tanpa tujuan",
+            "C. Mengikuti tren seni yang populer",
+            "D. Menghafal berbagai teknik menggambar"
+        ],
+        "answer": 0,
+        "image": ""
+    },
+    {
+        "question": "Apa langkah pertama dalam membuat jurnal visual?",
+        "options": [
+            "A. Langsung menggambar tanpa perencanaan",
+            "B. Memilih tema dan tujuan",
+            "C. Menyalin gambar dari sumber lain",
+            "D. Membeli jurnal kosong"
+        ],
+        "answer": 1,
+        "image": ""
+    },
+    {
+        "question": "Apa yang menjadi elemen utama dalam jurnal visual?",
+        "options": [
+            "A. Hanya teks dan tulisan",
+            "B. Hanya warna dan garis",
+            "C. Warna, garis, teks, dan gambar",
+            "D. Hanya sketsa hitam putih"
+        ],
+        "answer": 2,
+        "image": ""
+    },
+    {
+        "question": "Manakah yang merupakan contoh jurnal visual?",
+        "options": [
+            "A. Buku catatan matematika",
+            "B. Sketsa perjalanan dan catatan harian bergambar",
+            "C. Kumpulan artikel berita",
+            "D. Buku tulis kosong tanpa gambar"
+        ],
+        "answer": 1,
+        "image": ""
+    },
+    {
+        "question": "Apa aspek yang perlu diperhatikan dalam jurnal visual?",
+        "options": [
+            "A. Warna yang mencolok saja",
+            "B. Komposisi, keseimbangan, dan kesatuan",
+            "C. Hanya kerapian tulisan",
+            "D. Memenuhi halaman dengan gambar tanpa arti"
+        ],
+        "answer": 1,
+        "image": ""
+    },
+    {
+        "question": "Bagaimana memilih tema jurnal visual?",
+        "options": [
+            "A. Berdasarkan minat pribadi dan tujuan ekspresi",
+            "B. Meniru tema dari orang lain",
+            "C. Memilih tema yang sedang tren",
+            "D. Tidak perlu memilih tema"
+        ],
+        "answer": 0,
+        "image": ""
+    },
+    {
+        "question": "Apa manfaat utama dari jurnal visual?",
+        "options": [
+            "A. Meningkatkan kreativitas dan refleksi diri",
+            "B. Meniru karya orang lain",
+            "C. Hanya untuk hiburan",
+            "D. Membantu menghafal pelajaran"
+        ],
+        "answer": 0,
+        "image": ""
+    },
+    {
+        "question": "Mengapa refleksi penting dalam jurnal visual?",
+        "options": [
+            "A. Agar jurnal tampak lebih rapi",
+            "B. Supaya bisa meniru karya yang lebih bagus",
+            "C. Untuk mengevaluasi perkembangan dan perasaan yang dituangkan",
+            "D. Tidak ada alasan khusus"
+        ],
+        "answer": 2,
+        "image": ""
+    },
+    {
+        "question": "Apa perbedaan jurnal visual dengan buku harian?",
+        "options": [
+            "A. Jurnal visual hanya berisi gambar",
+            "B. Jurnal visual menggabungkan teks dan gambar",
+            "C. Buku harian hanya berisi teks",
+            "D. Tidak ada perbedaan"
+        ],
+        "answer": 1,
+        "image": ""
+    },
+    {
+        "question": "Apa langkah-langkah dalam membuat jurnal visual?",
+        "options": [
+            "A. Menggambar tanpa aturan",
+            "B. Menentukan tema, mengumpulkan referensi, membuat sketsa, menambahkan warna dan teks",
+            "C. Menggunakan aplikasi digital tanpa ide awal",
+            "D. Hanya menggunakan tulisan tanpa visual"
+        ],
+        "answer": 1,
+        "image": ""
+    },
+    {
+        "question": "Bagaimana cara mengapresiasi jurnal visual?",
+        "options": [
+            "A. Mengamati, menganalisis, menilai, dan memberikan tanggapan",
+            "B. Hanya memberikan pujian tanpa analisis",
+            "C. Menyalin karya tanpa izin",
+            "D. Mengkritik tanpa alasan"
+        ],
+        "answer": 0,
+        "image": ""
+    },
+    {
+        "question": "Apa itu rutinitas berpikir visibel dalam jurnal visual?",
+        "options": [
+            "A. Berpikir dalam hati tanpa menuliskannya",
+            "B. Hanya menggambar tanpa berpikir",
+            "C. Menyalin tanpa refleksi",
+            "D. Proses berpikir yang dituangkan dalam bentuk visual"
+        ],
+        "answer": 3,
+        "image": ""
+    },
+    {
+        "question": "Apa yang dimaksud dengan tangga umpan balik dalam apresiasi karya?",
+        "options": [
+            "A. Proses bertahap dalam memberikan tanggapan terhadap karya",
+            "B. Menilai karya hanya dari segi visual",
+            "C. Mengkritik tanpa dasar",
+            "D. Memberikan umpan balik tanpa melihat karya"
+        ],
+        "answer": 0,
+        "image": ""
+    },
+    {
+        "question": "Apa fungsi utama dari jurnal visual?",
+        "options": [
+            "A. Menyalin karya orang lain",
+            "B. Mengembangkan kreativitas dan refleksi diri",
+            "C. Menghafal berbagai teknik menggambar",
+            "D. Mengikuti tren jurnal visual"
+        ],
+        "answer": 1,
+        "image": ""
+    },
+    {
+        "question": "Bagaimana cara meningkatkan kualitas jurnal visual?",
+        "options": [
+            "A. Menggambar tanpa perencanaan",
+            "B. Memperhatikan komposisi dan kesatuan elemen",
+            "C. Menyalin karya dari internet",
+            "D. Hanya menambahkan warna cerah"
+        ],
+        "answer": 1,
+        "image": ""
+    },
+    {
+        "question": "Bagaimana langkah awal untuk membuat jurnal visual yang baik?",
+        "options": [
+            "A. Menentukan tema dan tujuan",
+            "B. Langsung menggambar tanpa konsep",
+            "C. Menggunakan warna sebanyak mungkin",
+            "D. Meniru jurnal orang lain"
+        ],
+        "answer": 0,
+        "image": ""
+    },
+    {
+        "question": "Mengapa pemilihan warna penting dalam jurnal visual?",
+        "options": [
+            "A. Karena warna menarik perhatian",
+            "B. Agar jurnal lebih berkesan dan memiliki suasana tertentu",
+            "C. Supaya terlihat lebih mencolok",
+            "D. Warna tidak penting dalam jurnal visual"
+        ],
+        "answer": 1,
+        "image": ""
+    },
+        {
+            "question": "Bagaimana cara menemukan inspirasi untuk jurnal visual?",
+            "options": [
+                "A. Menggambar tanpa mempertimbangkan tema",
+                "B. Hanya menyalin dari media sosial",
+                "C. Menggunakan warna yang mencolok tanpa konsep",
+                "D. Mengamati lingkungan sekitar dan pengalaman pribadi"
+            ],
+            "answer": 3,
+            "image": ""
+        },
+        {
+            "question": "Mengapa penting untuk mengembangkan gaya sendiri dalam jurnal visual?",
+            "options": [
+                "A. Agar lebih autentik dan mencerminkan kepribadian",
+                "B. Supaya bisa meniru karya terkenal",
+                "C. Hanya untuk mengikuti tren",
+                "D. Karena semua jurnal harus terlihat sama"
+            ],
+            "answer": 0,
+            "image": ""
+        },
+        {
+            "question": "Manakah contoh jurnal visual yang menggabungkan teks dan gambar?",
+            "options": [
+                {
+                    "option": "A",
+                    "image": "https://th.bing.com/th/id/OIP.TwSrBEN93ZfbzS1dOL7YbAHaEK?rs=1&pid=ImgDetMain"
+                },
+                {
+                    "option": "B",
+                    "image": "https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg"
+                },
+                {
+                    "option": "C",
+                    "image": "https://images.unsplash.com/photo-1506784983877-45594efa4cbe"
+                },
+                {
+                    "option": "D",
+                    "image": "https://images.pexels.com/photos/3184328/pexels-photo-3184328.jpeg"
+                }
+            ],
+            "answer": 0
+        },
+        {
+            "question": "Pilih gambar yang menunjukkan elemen jurnal visual yang lengkap.",
+            "options": [
+                {
+                    "option": "A",
+                    "image": "https://th.bing.com/th/id/OIP.ECIazxrGCHnsfSXUlNhAdwHaEK?rs=1&pid=ImgDetMain"
+                },
+                {
+                    "option": "B",
+                    "image": "https://images.pexels.com/photos/270665/pexels-photo-270665.jpeg"
+                },
+                {
+                    "option": "C",
+                    "image": "https://images.unsplash.com/photo-1607745741732-4fb00a16e1d0"
+                },
+                {
+                    "option": "D",
+                    "image": "https://images.pexels.com/photos/1591060/pexels-photo-1591060.jpeg"
+                }
+            ],
+            "answer": 1
+        },
+        {
+            "question": "Gambar mana yang menunjukkan proses refleksi dalam jurnal visual?",
+            "options": [
+                {
+                    "option": "A",
+                    "image": "https://images.unsplash.com/photo-1523268752875-8d785d39a3e3"
+                },
+                {
+                    "option": "B",
+                    "image": "https://images.pexels.com/photos/374720/pexels-photo-374720.jpeg"
+                },
+                {
+                    "option": "C",
+                    "image": "https://images.unsplash.com/photo-1613057789809-bc3b7126f7a9"
+                },
+                {
+                    "option": "D",
+                    "image": "https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg"
+                }
+            ],
+            "answer": 2
+        },
+        {
+            "question": "Manakah contoh jurnal visual dengan sketsa konseptual?",
+            "options": [
+                {
+                    "option": "A",
+                    "image": "https://images.unsplash.com/photo-1504197885-609741792ce7"
+                },
+                {
+                    "option": "B",
+                    "image": "https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg"
+                },
+                {
+                    "option": "C",
+                    "image": "https://images.unsplash.com/photo-1496275068113-fffcc9207da0"
+                },
+                {
+                    "option": "D",
+                    "image": "https://th.bing.com/th/id/OIP.lDODfZCBCvuIrTgGHBGVSgHaHa?rs=1&pid=ImgDetMain"
+                }
+            ],
+            "answer": 3
+        },
+        {
+            "question": "Pilih gambar yang menggambarkan jurnal visual dengan eksplorasi warna.",
+            "options": [
+                {
+                    "option": "A",
+                    "image": "https://th.bing.com/th/id/OIP.aq5HwR4xovrqDtwDgdI3fAHaHa?rs=1&pid=ImgDetMain"
+                },
+                {
+                    "option": "B",
+                    "image": "https://images.pexels.com/photos/270675/pexels-photo-270675.jpeg"
+                },
+                {
+                    "option": "C",
+                    "image": "https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1"
+                },
+                {
+                    "option": "D",
+                    "image": "https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg"
+                }
+            ],
+            "answer": 0
+        }
+    ]
+    
+    

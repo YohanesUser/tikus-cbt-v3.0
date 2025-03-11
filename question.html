@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INFORMATIKA KUMER (KAB.BANTUL 2025)</title>
+    <title>BAHASA INGGRIS KUMER (KAB.BANTUL 2025)</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/webp" href="d723afa8-87c7-4344-8064-11f4e3ab5480.webp">
     <link rel="stylesheet" href="css/cbt.css">
@@ -27,14 +27,42 @@
             <button onclick="enterFullscreen()" id="next">(>)</button>
             <button id="submit" style="display: none;">Kirim (lihat nilai)</button>
             <div class="text-size-controls">
-                <button id="text-size-toggle">
-                    Ukuran Teks
-                </button>
+                <button id="text-size-toggle">Ukuran Teks</button>
                 <ul id="text-size-options" style="display: none;">
                     <li id="increase-text-size">Perbesar (+)</li>
                     <li id="decrease-text-size">Perkecil (-)</li>
                 </ul>
             </div>
+            
+            <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const textSizeToggle = document.getElementById("text-size-toggle");
+                const textSizeOptions = document.getElementById("text-size-options");
+                const increaseTextSize = document.getElementById("increase-text-size");
+                const decreaseTextSize = document.getElementById("decrease-text-size");
+                
+                let currentSize = 16; // Ukuran default teks
+            
+                textSizeToggle.addEventListener("click", function () {
+                    // Tampilkan atau sembunyikan daftar ukuran teks
+                    textSizeOptions.style.display = textSizeOptions.style.display === "none" ? "block" : "none";
+                });
+            
+                increaseTextSize.addEventListener("click", function () {
+                    currentSize += 2;
+                    document.body.style.fontSize = currentSize + "px";
+                });
+            
+                decreaseTextSize.addEventListener("click", function () {
+                    currentSize -= 2;
+                    if (currentSize >= 10) { // Batas minimal ukuran teks
+                        document.body.style.fontSize = currentSize + "px";
+                    } else {
+                        currentSize = 10;
+                    }
+                });
+            });
+            </script>
 
             <button id="view-questions">Daftar Soal</button>
         </div>

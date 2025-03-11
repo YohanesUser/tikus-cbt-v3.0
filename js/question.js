@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", () => {
 let questions = [];
 
 // Fungsi untuk memuat pertanyaan dari file JSON
@@ -23,14 +24,33 @@ function loadQuestion() {
 window.addEventListener('beforeunload', function (e) {
     // Memutar bunyi peringatan
     const alertSound = document.getElementById('alert-sound');
-    alertSound.play(); // Memutar bunyi
+    if (alertSound) {
+        alertSound.play();
+    }
 
     // Pesan peringatan
-    const confirmationMessage = "Anda yakin ingin meninggalkan halaman ini? Semua jawaban yang belum disimpan akan hilang.";
+    const confirmationMessage = "Anda yakin ingin meninggalkan halaman CBT ini? Semua jawaban yang belum disimpan akan hilang.";
     
     // Untuk beberapa browser, Anda perlu mengatur returnValue
-    e.returnValue = confirmationMessage; // Standar
-    return confirmationMessage; // Beberapa browser mungkin memerlukan ini
+    e.returnValue = confirmationMessage; 
+    return confirmationMessage; 
+});
+
+// Mencegah tombol Home pada keyboard
+document.addEventListener('keydown', function (event) {
+    if (event.key === "Home") {
+        event.preventDefault();
+    }
+});
+
+// Mencegah tombol Home di HP (fullscreen paksa)
+document.addEventListener('visibilitychange', function () {
+    if (document.visibilityState === 'hidden') {
+        alert("Jangan keluar dari halaman CBT ini!");
+        document.documentElement.requestFullscreen().catch(err => {
+            console.log("Gagal masuk fullscreen:", err);
+        });
+    }
 });
 
 // Panggil fungsi untuk memuat pertanyaan saat halaman dimuat
@@ -59,6 +79,54 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+// Pindahkan semua kode ukuran teks ke dalam DOMContentLoaded
+document.addEventListener("DOMContentLoaded", () => {
+    // ... kode yang ada ...
+
+    // Inisialisasi ukuran teks
+    const textSizeToggleButton = document.getElementById('text-size-toggle');
+    const textSizeOptions = document.getElementById('text-size-options');
+    const increaseTextSizeOption = document.getElementById('increase-text-size');
+    const decreaseTextSizeOption = document.getElementById('decrease-text-size');
+    const questionTitle = document.getElementById('question');
+    const questionOptions = document.getElementById('options');
+
+    let titleFontSize = parseFloat(localStorage.getItem('titleFontSize')) || 1.2;
+    let optionFontSize = parseFloat(localStorage.getItem('optionFontSize')) || 0.8;
+
+    // Terapkan ukuran awal
+    updateTextSize();
+
+    // Event listeners untuk tombol ukuran teks
+    textSizeToggleButton.addEventListener('click', () => {
+        textSizeOptions.style.display = textSizeOptions.style.display === 'block' ? 'none' : 'block';
+    });
+
+    increaseTextSizeOption.addEventListener('click', () => {
+        titleFontSize = Math.min(2.0, titleFontSize + 0.1);
+        optionFontSize = Math.min(1.5, optionFontSize + 0.1);
+        updateTextSize();
+        localStorage.setItem('titleFontSize', titleFontSize);
+        localStorage.setItem('optionFontSize', optionFontSize);
+    });
+
+    decreaseTextSizeOption.addEventListener('click', () => {
+        titleFontSize = Math.max(0.8, titleFontSize - 0.1);
+        optionFontSize = Math.max(0.6, optionFontSize - 0.1);
+        updateTextSize();
+        localStorage.setItem('titleFontSize', titleFontSize);
+        localStorage.setItem('optionFontSize', optionFontSize);
+    });
+
+    function updateTextSize() {
+        if (questionTitle) questionTitle.style.fontSize = `${titleFontSize}em`;
+        const options = questionOptions.getElementsByTagName('li');
+        for (let option of options) {
+            option.style.fontSize = `${optionFontSize}em`;
+        }
+    }
+});
+
 document.addEventListener('selectstart', function (e) {
     e.preventDefault(); // Mencegah pemilihan teks
 });
@@ -76,6 +144,7 @@ document.addEventListener('keydown', function (e) {
         e.preventDefault(); // Mencegah Ctrl+C, Ctrl+U, Ctrl+S, Ctrl+P
     }
 });
+
 
 
 
@@ -115,54 +184,53 @@ document.querySelector('.user-info').style.display = 'flex';
 
 // Fungsi untuk mengirim hasil ke WhatsApp
 function submitQuiz() {
-    clearInterval(timerInterval);
-
-    const score = selectedAnswers.reduce((acc, answer, index) => {
-        return answer === questions[index]?.answer ? acc + 1 : acc;
-    }, 0);
-
     const totalQuestions = questions.length;
     if (totalQuestions === 0) {
         alert("Tidak ada soal yang tersedia!");
         return;
     }
 
+    const answeredCount = selectedAnswers.filter(answer => answer !== undefined && answer !== null).length;
+    const unansweredCount = totalQuestions - answeredCount;
+
+    // Konfirmasi sebelum submit
+    const confirmationMessage = `Soal Terjawab: ${answeredCount} soal.\n\n` +
+                                `Soal Yang Belum Terjawab: ${unansweredCount} soal.\n\n` +
+                                `Kamu Udah yakin ingin mengirim jawaban?🤞😆`;
+
+    if (!confirm(confirmationMessage)) {
+        return; // Jika pengguna memilih 'Tidak', maka proses submit dibatalkan
+    }
+
+    clearInterval(timerInterval);
+
+    const score = selectedAnswers.reduce((acc, answer, index) => {
+        return answer === questions[index]?.answer ? acc + 1 : acc;
+    }, 0);
+
     const percentage = (score / totalQuestions) * 100;
     const nilai = percentage.toFixed(2);
 
-    // Pastikan nama tersimpan dan tidak 'undefined' saat dikirim
     let nama = userName || "Tidak diketahui";
+    
 
-    let data = { nama: nama, nilai: nilai };
 
-    // Kirim data ke Google Sheet
-    fetch("https://script.google.com/macros/s/AKfycbyfNmrVJ3_NyAnMuMI0LIYRLDFlOqG1ZU0XzypHeiphoxw3JJiGK9-nsxgt8aHSwUut-w/exec", {
-        method: "POST",
-        body: JSON.stringify(data),
-        headers: { "Content-Type": "application/json" }
-    })
-    .then(response => response.json())
-    .then(result => {
-        if (result.status === "success") {
-            alert("Kuis selesai! Nilai Anda: " + nilai);
-        } else {
-            throw new Error("Gagal menyimpan data di Google Sheet!");
-        }
-    })
-    .catch(error => {
-        alert("Terjadi kesalahan saat mengirim data!");
-        console.error("Error:", error);
-    });
 
-    setTimeout(() => {
-        const phoneNumber = "6289530067456";
-        const message = `Nilai PROJOTAMANSARI: ${nama} adalah ${score} dari ${totalQuestions} (${percentage.toFixed(2)}%)`;
-        const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-        window.open(whatsappURL, '_blank');
-    }, 1000);
+
+
+    // Kirim langsung ke WhatsApp
+    const phoneNumber = "6289530067456"; // Ganti dengan nomor tujuan
+    const message = `Nilai BAHASAA INGGRIS ${nama} adalah: ${score} dari ${totalQuestions} (${nilai}%)`;
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappURL, '_blank');
 }
 
+
+
+
+
 document.getElementById('submit').addEventListener('click', submitQuiz);
+
 
 
 
@@ -175,6 +243,10 @@ if (userName) {
     document.querySelector('.user-info').style.display = 'flex'; // Menampilkan elemen
 }
 
+
+
+
+
 // Timer untuk kuis
 let timeRemaining = 25 * 60;
 let timerInterval = setInterval(() => {
@@ -186,6 +258,10 @@ let timerInterval = setInterval(() => {
         submitQuiz();
     }
 }, 1000);
+
+
+
+
 
 function formatTime(seconds) {
     const minutes = Math.floor(seconds / 60);
@@ -254,13 +330,7 @@ function selectOption(index) {
 }
 
 // Navigasi soal
-document.getElementById('next').addEventListener('click', () => {
-    if (currentPage < questions.length) {
-        currentPage++;
-        document.getElementById('current-question').textContent = currentPage;
-        loadQuestion();
-    }
-});
+
 
 document.getElementById('back').addEventListener('click', () => {
     if (currentPage > 1) {
@@ -276,8 +346,8 @@ document.getElementById('back').addEventListener('click', () => {
 document.getElementById('submit').addEventListener('click', submitQuiz);
 
 
-// Tampilkan daftar soal
-document.getElementById('view-questions').addEventListener('click', () => {
+// Fungsi untuk memperbarui daftar soal
+function updateQuestionList() {
     const questionListElement = document.getElementById('question-list');
     const questionListUl = questionListElement.querySelector('ul');
     questionListUl.innerHTML = '';
@@ -294,21 +364,50 @@ document.getElementById('view-questions').addEventListener('click', () => {
             currentPage = index + 1;
             document.getElementById('current-question').textContent = currentPage;
             loadQuestion();
-            questionListElement.style.display = 'none';
+            questionListElement.style.display = 'none'; // Sembunyikan daftar soal saat memilih soal
         });
-        
+
         questionListUl.appendChild(li);
     });
+}
 
-    questionListElement.style.display = 'block';
+// Tampilkan daftar soal
+document.getElementById('view-questions').addEventListener('click', () => {
+    updateQuestionList();
+    document.getElementById('question-list').style.display = 'block';
 });
 
+// Tutup daftar soal
 document.getElementById('close-list').addEventListener('click', () => {
     document.getElementById('question-list').style.display = 'none';
 });
 
-let pressTimer;
-const questionImage = document.getElementById('question-image');
+// Panggil updateQuestionList() setiap kali soal dijawab
+function answerQuestion() {
+    answeredQuestions.push(currentPage - 1);
+    updateQuestionList(); // Memperbarui daftar soal meskipun masih ditampilkan
+}
+
+document.getElementById('next').addEventListener('click', () => {
+    if (currentPage < questions.length) {
+        currentPage++;
+        document.getElementById('current-question').textContent = currentPage;
+        loadQuestion();
+
+        // Tutup daftar soal
+        document.getElementById('question-list').style.display = 'none';
+
+        // Masuk ke mode fullscreen
+        if (!document.fullscreenElement) {
+            document.documentElement.requestFullscreen().catch(err => {
+                console.log(`Error saat masuk fullscreen: ${err.message}`);
+            });
+        }
+    }
+});
+
+
+
 
 // Function to add zoom on mouse and touch
 function zoomIn() {
@@ -353,48 +452,7 @@ questionImage.addEventListener('touchcancel', function() {
 // Inisialisasi pertama
 loadQuestion();
 
-// Menangani dropdown untuk mengubah ukuran teks
-const textSizeToggleButton = document.getElementById('text-size-toggle');
-const textSizeOptions = document.getElementById('text-size-options');
-const increaseTextSizeOption = document.getElementById('increase-text-size');
-const decreaseTextSizeOption = document.getElementById('decrease-text-size');
-const questionTitle = document.getElementById('question');
-const questionOptions = document.getElementById('options');
 
-// Ukuran font awal
-let titleFontSize = 1.2; // Ukuran font awal untuk h2 (em)
-let optionFontSize = 0.8; // Ukuran font awal untuk li (em)
-
-// Toggle tampilkan/ sembunyikan pilihan ukuran teks
-textSizeToggleButton.addEventListener('click', () => {
-    const isVisible = textSizeOptions.style.display === 'block';
-    textSizeOptions.style.display = isVisible ? 'none' : 'block';
-});
-
-// Fungsi untuk memperbesar teks
-increaseTextSizeOption.addEventListener('click', () => {
-    titleFontSize += 0.1; // Menambah ukuran font h2
-    optionFontSize += 0.1; // Menambah ukuran font li
-    updateTextSize(); // Memperbarui ukuran teks
-    textSizeOptions.style.display = 'none'; // Menutup dropdown setelah memilih
-});
-
-// Fungsi untuk memperkecil teks
-decreaseTextSizeOption.addEventListener('click', () => {
-    titleFontSize = Math.max(0.5, titleFontSize - 0.1); // Mengurangi ukuran font h2 (dengan batas minimum)
-    optionFontSize = Math.max(0.5, optionFontSize - 0.1); // Mengurangi ukuran font li (dengan batas minimum)
-    updateTextSize(); // Memperbarui ukuran teks
-    textSizeOptions.style.display = 'none'; // Menutup dropdown setelah memilih
-});
-
-// Fungsi untuk memperbarui ukuran teks
-function updateTextSize() {
-    questionTitle.style.fontSize = `${titleFontSize}em`; // Update ukuran teks h2
-    const options = questionOptions.getElementsByTagName('li');
-    for (let option of options) {
-        option.style.fontSize = `${optionFontSize}em`; // Update ukuran teks li
-    }
-}
 // Mencegah pemilihan teks
 document.addEventListener('selectstart', function (e) {
     e.preventDefault(); // Menonaktifkan pemilihan teks
@@ -562,5 +620,5 @@ function enterFullscreen() {
         document.documentElement.msRequestFullscreen(); // Internet Explorer/Edge
     }
 }
-
+});
 
