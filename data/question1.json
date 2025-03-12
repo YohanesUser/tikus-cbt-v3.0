@@ -1,499 +1,445 @@
 [
     {
-        "question": "Apa yang dimaksud dengan apresiasi dalam jurnal visual?",
+        "question": "Dalam permainan Bola Voli, urutan teknik yang harus dikuasai adalah .....",
         "options": [
-            "A. Menilai dan menghargai karya jurnal visual",
-            "B. Membuat jurnal visual setiap hari",
-            "C. Menggambar tanpa tujuan tertentu",
-            "D. Menyalin gambar dari buku lain"
-        ],
-        "answer": 0,
-        "image": ""
-    },
-    {
-        "question": "Apa tujuan utama dari apresiasi jurnal visual?",
-        "options": [
-            "A. Mengembangkan pemahaman seni dan ekspresi kreatif",
-            "B. Menyalin karya orang lain",
-            "C. Menghafal berbagai teknik menggambar",
-            "D. Mengikuti tren jurnal visual"
-        ],
-        "answer": 0,
-        "image": ""
-    },
-    {
-        "question": "Apa langkah pertama dalam membuat jurnal visual?",
-        "options": [
-            "A. Menggambar tanpa rencana",
-            "B. Memilih tema dan tujuan",
-            "C. Mewarnai latar belakang",
-            "D. Menyalin jurnal teman"
+            "A. Smash, Servis, Passing, Blocking",
+            "B. Passing, Servis, Smash, Blocking",
+            "C. Passing, Blocking, Servis, Smash",
+            "D. Blocking, Passing, Servis, Smash"
         ],
         "answer": 1,
         "image": ""
     },
     {
-        "question": "Apa saja elemen yang umumnya ada dalam jurnal visual?",
+        "question": "Prinsip permainan Bola Voli yang benar adalah ....Bola harus datang mengarah ke pemain lawan, Pemain menunggu datangnya bola, Arah bola bebas mengarah ke lawan selama masih di dalam lapangan, Ketinggian bola harus lebih dari 2,5 m",
         "options": [
-            "A. Hanya gambar",
-            "B. Hanya teks",
-            "C. Warna, garis, teks, dan gambar",
-            "D. Tidak ada elemen khusus"
+            "A. 1 dan 2",
+            "B. 2 dan 3",
+            "C. 2 dan 4",
+            "D. 3 dan 4"
+        ],
+        "answer": 1,
+        "image": ""
+    },
+    {
+        "question": "Gambar tersebut dapat membantu pemain bola voli dalam melakukan Passing atas, Blocking, Smash, Passing bawah, Jump servis.",
+        "options": [
+            "A. 1, 2 dan 3",
+            "B. 1, 4 dan 5",
+            "C. 2, 3 dan 5",
+            "D. 3, 4 dan 5"
+        ],
+        "answer": 2,
+        "image": "https://th.bing.com/th/id/OIP.eNDekGHynl8uJHalWgc1pAHaD3?rs=1&pid=ImgDetMain"
+    },
+    {
+        "question": "Syarat untuk dapat melakukan gerakan tersebut adalah ....",
+        "options": [
+            "A. mampu berlari",
+            "B. mampu menahan",
+            "C. mampu melompat",
+            "D. mampu memukul"
+        ],
+        "answer": 2,
+        "image": "https://png.pngtree.com/thumb_back/fw800/background/20220512/pngtree-jumping-boy-smiling-child-volleyball-photo-image_204043.jpg"
+    },
+    {
+        "question": "Gerakan yang dilakukan 3 pemain kostum Merah adalah .....",
+        "options": [
+            "A. servis",
+            "B. passing",
+            "C. smash",
+            "D. blocking"
+        ],
+        "answer": 3,
+        "image": "https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_640/v1626936669/xehk7u5detebg1kw6mwh.jpg"
+    },
+    {
+        "question": "Untuk dapat melakukan servis bawah dengan baik, maka gerakan tangan yang benar adalah ....",
+        "options": [
+            "A. mendorong ke depan",
+            "B. mendorong ke samping",
+            "C. mengayun dari belakang",
+            "D. diangkat di atas kepala"
         ],
         "answer": 2,
         "image": ""
     },
     {
-        "question": "Apa yang bisa menjadi contoh jurnal visual?",
+        "question": "Langkah-langkah melakukan passing bawah dalam bola voli dengan benar adalah: **1. Berdiri dengan kedua kaki dibuka selebar bahu, 2. Tekuk lutut dan condongkan badan ke depan, 3. Rapatkan dan luruskan kedua lengan di depan badan, 4. Jari tangan terbuka, 5. Posisikan lengan di atas kepala, 6. Arahkan pandangan ke lawan.**",
         "options": [
-            "A. Buku cetak dengan banyak gambar",
-            "B. Buku pelajaran yang penuh tulisan",
-            "C. Daftar tugas harian",
-            "D. Sketsa harian, catatan perjalanan, dan ilustrasi konsep"
-        ],
-        "answer": 3,
-        "image": ""
-    },
-    {
-        "question": "Aspek apa yang perlu diperhatikan dalam jurnal visual?",
-        "options": [
-            "A. Hanya kerapihan tulisan",
-            "B. Warna dan garis tanpa aturan",
-            "C. Memenuhi halaman dengan gambar tanpa arti",
-            "D. Komposisi, keseimbangan, dan kesatuan"
-        ],
-        "answer": 3,
-        "image": ""
-    },
-    {
-        "question": "Bagaimana cara memilih tema dalam jurnal visual?",
-        "options": [
-            "A. Meniru tema dari orang lain",
-            "B. Memilih tema yang sedang tren",
-            "C. Berdasarkan minat pribadi dan tujuan ekspresi",
-            "D. Tidak perlu memilih tema"
-        ],
-        "answer": 2,
-        "image": ""
-    },
-    {
-        "question": "Apa manfaat dari membuat jurnal visual?",
-        "options": [
-            "A. Meningkatkan hafalan pelajaran",
-            "B. Meniru karya orang lain",
-            "C. Hanya untuk hiburan",
-            "D. Melatih kreativitas dan refleksi diri"
-        ],
-        "answer": 3,
-        "image": ""
-    },
-    {
-        "question": "Mengapa refleksi penting dalam jurnal visual?",
-        "options": [
-            "A. Agar jurnal tampak lebih rapi",
-            "B. Supaya bisa meniru karya yang lebih bagus",
-            "C. Tidak ada alasan khusus",
-            "D. Untuk mengevaluasi perkembangan dan perasaan yang dituangkan"
-        ],
-        "answer": 3,
-        "image": ""
-    },
-    {
-        "question": "Apa perbedaan jurnal visual dengan buku harian dan buku gambar?",
-        "options": [
-            "A. Jurnal visual hanya digunakan untuk tugas sekolah",
-            "B. Tidak ada perbedaan",
-            "C. Jurnal visual menggabungkan teks dan gambar untuk refleksi",
-            "D. Buku harian hanya berisi teks, buku gambar hanya berisi sketsa"
-        ],
-        "answer": 2,
-        "image": ""
-    },
-    {
-        "question": "Langkah-langkah apa yang diperlukan untuk membuat jurnal visual?",
-        "options": [
-            "A. Menggambar tanpa aturan",
-            "B. Menentukan tema, mengumpulkan referensi, membuat sketsa, menambahkan warna dan teks",
-            "C. Menggunakan aplikasi digital tanpa ide awal",
-            "D. Hanya menggunakan tulisan tanpa visual"
-        ],
-        "answer": 1,
-        "image": ""
-    },
-    {
-        "question": "Bagaimana langkah-langkah mengapresiasi karya jurnal visual?",
-        "options": [
-            "A. Hanya memberikan pujian tanpa analisis",
-            "B. Mengkritik tanpa alasan",
-            "C. Menyalin karya tanpa izin",
-            "D. Mengamati, menganalisis, menilai, dan memberikan tanggapan"
-        ],
-        "answer": 3,
-        "image": ""
-    },
-    {
-        "question": "Apa itu rutinitas berpikir visibel dalam jurnal visual?",
-        "options": [
-            "A. Berpikir dalam hati tanpa menuliskannya",
-            "B. Hanya menggambar tanpa berpikir",
-            "C. Menyalin tanpa refleksi",
-            "D. Proses berpikir yang dituangkan dalam bentuk visual"
-        ],
-        "answer": 3,
-        "image": ""
-    },
-    {
-        "question": "Apa yang dimaksud dengan tangga umpan balik dalam apresiasi karya?",
-        "options": [
-            "A. Menilai karya hanya dari segi visual",
-            "B. Mengkritik tanpa dasar",
-            "C. Memberikan umpan balik tanpa melihat karya",
-            "D. Proses bertahap dalam memberikan tanggapan terhadap karya"
-        ],
-        "answer": 3,
-        "image": ""
-    },
-    {
-        "question": "Apa yang dimaksud dengan jurnal visual?",
-        "options": [
-            "A. Buku yang hanya berisi tulisan",
-            "B. Catatan yang menggabungkan gambar, teks, dan elemen visual lainnya",
-            "C. Kumpulan gambar tanpa makna",
-            "D. Buku khusus untuk mencatat tugas harian"
-        ],
-        "answer": 1,
-        "image": ""
-    },
-    {
-        "question": "Mengapa jurnal visual penting dalam apresiasi seni?",
-        "options": [
-            "A. Karena jurnal visual hanya digunakan untuk pameran",
-            "B. Sebagai media untuk mengekspresikan ide dan perasaan",
-            "C. Untuk menyalin karya seni yang ada",
-            "D. Karena jurnal visual adalah tren terbaru"
-        ],
-        "answer": 1,
-        "image": ""
-    },
-    {
-        "question": "Apa tujuan utama apresiasi jurnal visual?",
-        "options": [
-            "A. Menilai dan memahami makna karya seni",
-            "B. Menggambar tanpa tujuan",
-            "C. Mengikuti tren seni yang populer",
-            "D. Menghafal berbagai teknik menggambar"
-        ],
-        "answer": 0,
-        "image": ""
-    },
-    {
-        "question": "Apa langkah pertama dalam membuat jurnal visual?",
-        "options": [
-            "A. Langsung menggambar tanpa perencanaan",
-            "B. Memilih tema dan tujuan",
-            "C. Menyalin gambar dari sumber lain",
-            "D. Membeli jurnal kosong"
-        ],
-        "answer": 1,
-        "image": ""
-    },
-    {
-        "question": "Apa yang menjadi elemen utama dalam jurnal visual?",
-        "options": [
-            "A. Hanya teks dan tulisan",
-            "B. Hanya warna dan garis",
-            "C. Warna, garis, teks, dan gambar",
-            "D. Hanya sketsa hitam putih"
-        ],
-        "answer": 2,
-        "image": ""
-    },
-    {
-        "question": "Manakah yang merupakan contoh jurnal visual?",
-        "options": [
-            "A. Buku catatan matematika",
-            "B. Sketsa perjalanan dan catatan harian bergambar",
-            "C. Kumpulan artikel berita",
-            "D. Buku tulis kosong tanpa gambar"
-        ],
-        "answer": 1,
-        "image": ""
-    },
-    {
-        "question": "Apa aspek yang perlu diperhatikan dalam jurnal visual?",
-        "options": [
-            "A. Warna yang mencolok saja",
-            "B. Komposisi, keseimbangan, dan kesatuan",
-            "C. Hanya kerapian tulisan",
-            "D. Memenuhi halaman dengan gambar tanpa arti"
-        ],
-        "answer": 1,
-        "image": ""
-    },
-    {
-        "question": "Bagaimana memilih tema jurnal visual?",
-        "options": [
-            "A. Berdasarkan minat pribadi dan tujuan ekspresi",
-            "B. Meniru tema dari orang lain",
-            "C. Memilih tema yang sedang tren",
-            "D. Tidak perlu memilih tema"
-        ],
-        "answer": 0,
-        "image": ""
-    },
-    {
-        "question": "Apa manfaat utama dari jurnal visual?",
-        "options": [
-            "A. Meningkatkan kreativitas dan refleksi diri",
-            "B. Meniru karya orang lain",
-            "C. Hanya untuk hiburan",
-            "D. Membantu menghafal pelajaran"
-        ],
-        "answer": 0,
-        "image": ""
-    },
-    {
-        "question": "Mengapa refleksi penting dalam jurnal visual?",
-        "options": [
-            "A. Agar jurnal tampak lebih rapi",
-            "B. Supaya bisa meniru karya yang lebih bagus",
-            "C. Untuk mengevaluasi perkembangan dan perasaan yang dituangkan",
-            "D. Tidak ada alasan khusus"
-        ],
-        "answer": 2,
-        "image": ""
-    },
-    {
-        "question": "Apa perbedaan jurnal visual dengan buku harian?",
-        "options": [
-            "A. Jurnal visual hanya berisi gambar",
-            "B. Jurnal visual menggabungkan teks dan gambar",
-            "C. Buku harian hanya berisi teks",
-            "D. Tidak ada perbedaan"
-        ],
-        "answer": 1,
-        "image": ""
-    },
-    {
-        "question": "Apa langkah-langkah dalam membuat jurnal visual?",
-        "options": [
-            "A. Menggambar tanpa aturan",
-            "B. Menentukan tema, mengumpulkan referensi, membuat sketsa, menambahkan warna dan teks",
-            "C. Menggunakan aplikasi digital tanpa ide awal",
-            "D. Hanya menggunakan tulisan tanpa visual"
-        ],
-        "answer": 1,
-        "image": ""
-    },
-    {
-        "question": "Bagaimana cara mengapresiasi jurnal visual?",
-        "options": [
-            "A. Mengamati, menganalisis, menilai, dan memberikan tanggapan",
-            "B. Hanya memberikan pujian tanpa analisis",
-            "C. Menyalin karya tanpa izin",
-            "D. Mengkritik tanpa alasan"
-        ],
-        "answer": 0,
-        "image": ""
-    },
-    {
-        "question": "Apa itu rutinitas berpikir visibel dalam jurnal visual?",
-        "options": [
-            "A. Berpikir dalam hati tanpa menuliskannya",
-            "B. Hanya menggambar tanpa berpikir",
-            "C. Menyalin tanpa refleksi",
-            "D. Proses berpikir yang dituangkan dalam bentuk visual"
-        ],
-        "answer": 3,
-        "image": ""
-    },
-    {
-        "question": "Apa yang dimaksud dengan tangga umpan balik dalam apresiasi karya?",
-        "options": [
-            "A. Proses bertahap dalam memberikan tanggapan terhadap karya",
-            "B. Menilai karya hanya dari segi visual",
-            "C. Mengkritik tanpa dasar",
-            "D. Memberikan umpan balik tanpa melihat karya"
-        ],
-        "answer": 0,
-        "image": ""
-    },
-    {
-        "question": "Apa fungsi utama dari jurnal visual?",
-        "options": [
-            "A. Menyalin karya orang lain",
-            "B. Mengembangkan kreativitas dan refleksi diri",
-            "C. Menghafal berbagai teknik menggambar",
-            "D. Mengikuti tren jurnal visual"
-        ],
-        "answer": 1,
-        "image": ""
-    },
-    {
-        "question": "Bagaimana cara meningkatkan kualitas jurnal visual?",
-        "options": [
-            "A. Menggambar tanpa perencanaan",
-            "B. Memperhatikan komposisi dan kesatuan elemen",
-            "C. Menyalin karya dari internet",
-            "D. Hanya menambahkan warna cerah"
-        ],
-        "answer": 1,
-        "image": ""
-    },
-    {
-        "question": "Bagaimana langkah awal untuk membuat jurnal visual yang baik?",
-        "options": [
-            "A. Menentukan tema dan tujuan",
-            "B. Langsung menggambar tanpa konsep",
-            "C. Menggunakan warna sebanyak mungkin",
-            "D. Meniru jurnal orang lain"
-        ],
-        "answer": 0,
-        "image": ""
-    },
-    {
-        "question": "Mengapa pemilihan warna penting dalam jurnal visual?",
-        "options": [
-            "A. Karena warna menarik perhatian",
-            "B. Agar jurnal lebih berkesan dan memiliki suasana tertentu",
-            "C. Supaya terlihat lebih mencolok",
-            "D. Warna tidak penting dalam jurnal visual"
+            "A. 1, 2 dan 3",
+            "B. 2, 3 dan 4",
+            "C. 3, 4 dan 5",
+            "D. 4, 5 dan 6"
         ],
         "answer": 1,
         "image": ""
     },
         {
-            "question": "Bagaimana cara menemukan inspirasi untuk jurnal visual?",
+            "question": "Perkenaan bola saat melakukan passing bawah yang benar adalah pada bagian .....",
             "options": [
-                "A. Menggambar tanpa mempertimbangkan tema",
-                "B. Hanya menyalin dari media sosial",
-                "C. Menggunakan warna yang mencolok tanpa konsep",
-                "D. Mengamati lingkungan sekitar dan pengalaman pribadi"
+                "A. lengan atas",
+                "B. telapak",
+                "C. bonggol/ jempol",
+                "D. pergelangan atas"
             ],
-            "answer": 3,
+            "answer": 2,
             "image": ""
         },
         {
-            "question": "Mengapa penting untuk mengembangkan gaya sendiri dalam jurnal visual?",
+            "question": "Di dalam permainan bola voli posisi tosser dan smasher harus bisa melakukan blocking atau sebagai pembendung serangan lawan.\nPosisi blocking berada pada bagian nomor ....",
             "options": [
-                "A. Agar lebih autentik dan mencerminkan kepribadian",
-                "B. Supaya bisa meniru karya terkenal",
-                "C. Hanya untuk mengikuti tren",
-                "D. Karena semua jurnal harus terlihat sama"
+                "A. 1, 2 dan 3",
+                "B. 2, 3 dan 5",
+                "C. 2, 3 dan 6",
+                "D. 4, 5 dan 6"
+            ],
+            "answer": 1,
+            "image": "https://github.com/YohanesUser/galeri/blob/main/Screenshot%202025-03-12%20175020.png?raw=true"
+        },
+        {
+            "question": "Langkah-langkah dalam gerakan bola voli sebagai berikut:\n1. Persiapkan tubuh dengan berdiri selebar bahu dan lutut sedikit ditekuk\n2. Angkat kedua tangan di depan wajah dengan jari-jari membentuk segitiga kecil\n3. Arahkan pandangan ke bola\n4. Dorong kedua lengan menyongsong arah datangnya bola\n5. Naikkan lutut dan pinggul serta angkat sedikit bagian tumit\n6. Gerakkan tangan, lengan, dan tubuh secara serentak\n7. Arahkan bola ke target yang diinginkan \nGerakan di atas adalah ......",
+            "options": [
+                "A. servis atas",
+                "B. passing samping",
+                "C. passing atas",
+                "D. smash"
+            ],
+            "answer": 2,
+            "image": ""
+        },
+        {
+            "question": "Syarat utama yang harus dikuasai sebelum bermain Bulutangkis adalah mampu....",
+            "options": [
+                "A. Memukul kock dengan benar",
+                "B. servis dengan benar",
+                "C. smash dengan cepat",
+                "D. mengembalikan kock"
             ],
             "answer": 0,
             "image": ""
         },
         {
-            "question": "Manakah contoh jurnal visual yang menggabungkan teks dan gambar?",
+            "question": "Pukulan forehand biasanya dilakukan untuk memukul shuttlecock atau kok bulu tangkis yang datang dari arah depan tubuh. Sementara itu, backhand adalah pukulan yang dilakukan dengan posisi tangan yang memegang raket membelakangi arah net.\nUntuk melakukan servis pendek digunakan pukulan .....",
             "options": [
-                {
-                    "option": "A",
-                    "image": "https://th.bing.com/th/id/OIP.TwSrBEN93ZfbzS1dOL7YbAHaEK?rs=1&pid=ImgDetMain"
-                },
-                {
-                    "option": "B",
-                    "image": "https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg"
-                },
-                {
-                    "option": "C",
-                    "image": "https://images.unsplash.com/photo-1506784983877-45594efa4cbe"
-                },
-                {
-                    "option": "D",
-                    "image": "https://images.pexels.com/photos/3184328/pexels-photo-3184328.jpeg"
-                }
+                "A. forehand",
+                "B. backhand",
+                "C. jepit tang",
+                "D. Finland hand"
             ],
-            "answer": 0
+            "answer": 1,
+            "image": ""
         },
         {
-            "question": "Pilih gambar yang menunjukkan elemen jurnal visual yang lengkap.",
+            "question": "Pukulan servis forehand akan memberikan arah kock ke bagian ......",
             "options": [
-                {
-                    "option": "A",
-                    "image": "https://th.bing.com/th/id/OIP.ECIazxrGCHnsfSXUlNhAdwHaEK?rs=1&pid=ImgDetMain"
-                },
-                {
-                    "option": "B",
-                    "image": "https://images.pexels.com/photos/270665/pexels-photo-270665.jpeg"
-                },
-                {
-                    "option": "C",
-                    "image": "https://images.unsplash.com/photo-1607745741732-4fb00a16e1d0"
-                },
-                {
-                    "option": "D",
-                    "image": "https://images.pexels.com/photos/1591060/pexels-photo-1591060.jpeg"
-                }
+                "A. depan",
+                "B. belakang",
+                "C. dekat net",
+                "D. belakang garis pembatas"
             ],
-            "answer": 1
+            "answer": 1,
+            "image": ""
         },
         {
-            "question": "Gambar mana yang menunjukkan proses refleksi dalam jurnal visual?",
+            "question": "Dilihat dari cara memegang raket, pemain tersebut akan melakukan gerakan ....",
             "options": [
-                {
-                    "option": "A",
-                    "image": "https://images.unsplash.com/photo-1523268752875-8d785d39a3e3"
-                },
-                {
-                    "option": "B",
-                    "image": "https://images.pexels.com/photos/374720/pexels-photo-374720.jpeg"
-                },
-                {
-                    "option": "C",
-                    "image": "https://images.unsplash.com/photo-1613057789809-bc3b7126f7a9"
-                },
-                {
-                    "option": "D",
-                    "image": "https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg"
-                }
+                "A. smash",
+                "B. servis pendek",
+                "C. servis panjang",
+                "D. servis datar"
             ],
-            "answer": 2
+            "answer": 1,
+            "image": "https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_640/v1634495465/hsx7saorxub9dxuupcuw.png"
         },
         {
-            "question": "Manakah contoh jurnal visual dengan sketsa konseptual?",
+            "question": "Teknik pengembalian tersebut menggunakan pukulan ....",
             "options": [
-                {
-                    "option": "A",
-                    "image": "https://images.unsplash.com/photo-1504197885-609741792ce7"
-                },
-                {
-                    "option": "B",
-                    "image": "https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg"
-                },
-                {
-                    "option": "C",
-                    "image": "https://images.unsplash.com/photo-1496275068113-fffcc9207da0"
-                },
-                {
-                    "option": "D",
-                    "image": "https://th.bing.com/th/id/OIP.lDODfZCBCvuIrTgGHBGVSgHaHa?rs=1&pid=ImgDetMain"
-                }
+                "A. overhand",
+                "B. backhand",
+                "C. forehand",
+                "D. bebas"
             ],
-            "answer": 3
+            "answer": 1,
+            "image": "https://olahraganesia.id/wp-content/uploads/2021/12/Teknik-Pukulan-Backhand-Bulu-Tangkis.jpg"
         },
         {
-            "question": "Pilih gambar yang menggambarkan jurnal visual dengan eksplorasi warna.",
+            "question": "Jika servis dilakukan pemain di posisi E, maka arah kock ke area ....",
             "options": [
-                {
-                    "option": "A",
-                    "image": "https://th.bing.com/th/id/OIP.aq5HwR4xovrqDtwDgdI3fAHaHa?rs=1&pid=ImgDetMain"
-                },
-                {
-                    "option": "B",
-                    "image": "https://images.pexels.com/photos/270675/pexels-photo-270675.jpeg"
-                },
-                {
-                    "option": "C",
-                    "image": "https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1"
-                },
-                {
-                    "option": "D",
-                    "image": "https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg"
-                }
+                "A. A",
+                "B. B",
+                "C. bebas",
+                "D. C"
             ],
-            "answer": 0
-        }
-    ]
+            "answer": 3,
+            "image": "https://github.com/YohanesUser/galeri/blob/main/Screenshot%202025-03-12%20175741.png?raw=true"
+        },
+        {
+            "question": "Area servis dan area permainan untuk nomor ganda ditunjukkan nomor ....",
+            "options": [
+                "A. 1 dan 2",
+                "B. 1 dan 3",
+                "C. 2 dan 4",
+                "D. 3 dan 4"
+            ],
+            "answer": 3,
+            "image": "https://github.com/YohanesUser/galeri/blob/main/Screenshot%202025-03-12%20180101.png?raw=true"
+        },
+        {
+            "question": "Nomor pertandingan pada gambar adalah ....",
+            "options": [
+                "A. tunggal putra",
+                "B. ganda putri",
+                "C. ganda campuran",
+                "D. ganda putra"
+            ],
+            "answer": 0,
+            "image": "https://th.bing.com/th/id/OIP.FpQj9engysUFl-nuTqaMBAAAAA?rs=1&pid=ImgDetMain"
+        },
+        {
+            "question": "Ketentuan servis pendek pada permainan Bulutangkis bahwa kock harus melampaui.....",
+            "options": [
+                "A. line 4 m dari net",
+                "B. line 3 m dari net",
+                "C. line 2 m dari net",
+                "D. line 1 m dari net"
+            ],
+            "answer": 3,
+            "image": ""
+        },
+        {
+            "question": "Pukulan lob adalah teknik dasar dalam bulu tangkis yang bertujuan untuk menerbangkan shuttlecock ke belakang garis lapangan lawan. Pukulan lob dilakukan dengan cara melambungkan shuttlecock setinggi mungkin. Pukulan tersebut mengarah ke ....",
+            "options": [
+                "A. depan net",
+                "B. samping",
+                "C. melambung ke belakang",
+                "D. melambung ke depan"
+            ],
+            "answer": 2,
+            "image": ""
+        },
+            {
+                "question": "Gerakan yang dilakukan pemain tersebut adalah ....",
+                "options": [
+                    "A. jump smash",
+                    "B. jump blocking",
+                    "C. jump service",
+                    "D. squad jump"
+                ],
+                "answer": 0,
+                "image": "https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_640/v1626933274/msb0jyuovkxkmdf3knlg.jpg"
+            },
+            {
+                "question": "Untuk dapat melakukan passing atas dengan benar, posisi bola dan jari yang benar adalah ....",
+                "options": [
+                    "A. 3 dan 4",
+                    "B. 1 dan 2",
+                    "C. 2 dan 3",
+                    "D. 1 dan 4"
+                ],
+                "answer": 1,
+                "image": ""
+            },
+            {
+                "question": "Jika lapangan bola voli berukuran 10 x 20 m, dan para pemain melakukan pemanasan dengan berlari mengelilingi lapangan sejauh 600 m. Dari jarak ini, para pemain mengelilingi lapangan sebanyak.....kali",
+                "options": [
+                    "A. 7",
+                    "B. 8",
+                    "C. 9",
+                    "D. 10"
+                ],
+                "answer": 1,
+                "image": ""
+            },
+            {
+                "question": "Seorang atlet Bulutangkis melakukan pemanasan dengan lari mengelilingi lapangan sebanyak 5 kali. Jika ukuran lapangan bagian luar 8 x 15 m, maka jarak yang ditempuh atlet tersebut adalah .... m",
+                "options": [
+                    "A. 1.200",
+                    "B. 230",
+                    "C. 300",
+                    "D. 600"
+                ],
+                "answer": 3,
+                "image": ""
+            },
+            {
+                "question": "Pertandingan bulu tangkis terdiri dari tiga set untuk tunggal dan lima set untuk ganda, dengan masing-masing set dimainkan hingga 21 poin. Jika 1 set memerlukan waktu 15 menit, maka untuk partai ganda diperkirakan akan membutuhkan waktu .....",
+                "options": [
+                    "A. 1,00 jam",
+                    "B. 75 menit",
+                    "C. 1,5 jam",
+                    "D. 140 menit"
+                ],
+                "answer": 2,
+                "image": ""
+            },
+            {
+                "question": "Gerakan pada gambar termasuk kategori ..... gerakannya adalah .....",
+                "options": [
+                    "A. senam irama ; salto",
+                    "B. senam kebugaran ; roll depan",
+                    "C. senam lantai ; roll depan",
+                    "D. senam irama ; salto"
+                ],
+                "answer": 1,
+                "image": "https://asset.kompas.com/crops/HiCNN8bbQHZipFgBZs3DvQgg5wQ=/104x66:371x244/750x500/data/photo/2020/11/16/5fb213901a12e.png"
+            },
+            {
+                "question": "Gerakan senam lantai yang dilakukan dengan mengangkat badan ke atas sehingga membentuk lengkungan. Gerakan ini menopang tubuh dengan tangan dan kaki. Gerakan senam lantai yang dimaksud adalah gerakan ....",
+                "options": [
+                    "A. salto",
+                    "B. roll depan",
+                    "C. roll belakang",
+                    "D. kayang"
+                ],
+                "answer": 3,
+                "image": "https://d1vbn70lmn1nqe.cloudfront.net/prod/wp-content/uploads/2023/12/06080711/Ini-Cara-Melakukan-Kayang-dan-Manfaatnya-untuk-Kesehatan-Tubuh.jpg.webp"
+            },
+            {
+                "question": "Perhatikan langkah-langkah gerakan senam berikut ini:\n1. Berjongkok dengan kedua kaki rapat dan tumit sedikit diangkat\n2. Condongkan kepala ke depan hingga dagu menyentuh dada\n3. Bengkokkan kedua tangan di samping telinga dengan telapak tangan menghadap ke atas\n4. Tolakkan kedua kaki ke lantai ke arah belakang\n5. Saat punggung menyentuh matras, letakkan kedua tangan di samping telinga\n6. Ayunkan kedua kaki melewati kepala\n7. Dorong badan menggunakan kedua tangan sehingga kembali ke posisi jongkok\nGerakan yang dimaksud adalah ....",
+                "options": [
+                    "A. Salto",
+                    "B. Roll Belakang",
+                    "C. Roll Depan",
+                    "D. Kayang"
+                ],
+                "answer": 2,
+                "image": ""
+            },
+            {
+                "question": "Gerakan tersebut merupakan rangkaian gerakan untuk .....",
+                "options": [
+                    "A. Roll Depan",
+                    "B. Roll Belakang",
+                    "C. Kayang",
+                    "D. Salto"
+                ],
+                "answer": 3,
+                "image": "https://percepat.com/wp-content/uploads/2020/02/Cara-Melakukan-Gerakan-Meroda.jpg"
+            },
+            {
+                "question": "Gerakan pemanasan tersebut sangat cocok digunakan untuk cabang olahraga ....",
+                "options": [
+                    "A. senam lantai",
+                    "B. renang",
+                    "C. lari",
+                    "D. voli"
+                ],
+                "answer": 0,
+                "image": "https://percepat.com/wp-content/uploads/2019/12/Gerakan-Dasar-Senam-Lantai.jpg"
+            },
+            {
+                "question": "Gerakan pada gambar sangat tepat digunakan sebagai latihan ....",
+                "options": [
+                    "A. voli",
+                    "B. kebugaran jasmani",
+                    "C. basket",
+                    "D. sepak bola"
+                ],
+                "answer": 1,
+                "image": "https://th.bing.com/th/id/OIP.f_oQVsusCkZ65l2m6WqJgAHaE8?rs=1&pid=ImgDetMain"
+            },
+            {
+                "question": "Bentuk latihan di atas diperuntukkan untuk melatih ....",
+                "options": [
+                    "A. daya tahan",
+                    "B. kekuatan",
+                    "C. kelenturan",
+                    "D. keseimbangan"
+                ],
+                "answer": 1,
+                "image": "https://th.bing.com/th/id/OIP.YEOKRHOJZGqsWm76uRlxEwHaFj?rs=1&pid=ImgDetMain"
+            },
+            {
+                "question": "Gerakan pada gambar sangat diperlukan dalam berbagai cabang olahraga. Fungsi gerakan tersebut adalah untuk melatih ....",
+                "options": [
+                    "A. kelincahan",
+                    "B. keseimbangan",
+                    "C. konsentrasi",
+                    "D. kekuatan"
+                ],
+                "answer": 2,
+                "image": "https://th.bing.com/th/id/OIP.j734-7hZEchV6l5rkuyDhAHaEK?rs=1&pid=ImgDetMain"
+            },
+            {
+                "question": "Kebugaran jasmani adalah kemampuan tubuh untuk melakukan aktivitas fisik sehari-hari tanpa merasa lelah. Kebugaran jasmani merupakan salah satu faktor penentu kesehatan dan ketahanan tubuh. Dari narasi di atas, pernyataan yang sesuai adalah ....",
+                "options": [
+                    "A. setiap 1 minggu sekali wajib dilaksanakan",
+                    "B. dilaksanakan pas hari libur",
+                    "C. Olahraga idealnya dilakukan setiap hari minimal 15 menit.",
+                    "D. makanan bergizi lebih penting daripada olahraga"
+                ],
+                "answer": 2,
+                "image": ""
+            },
+            {
+                "question": "Contoh gerakan kebugaran jasmani pada unsur fleksibilitas adalah ....",
+                "options": [
+                    "A. push up ; angkat berat",
+                    "B. senam ; joging",
+                    "C. renang ; mancing",
+                    "D. lari cepat"
+                ],
+                "answer": 1,
+                "image": ""
+            },
+                {
+                    "question": "Permainan bola kecil yang teknik permainannya mirip dengan Softball adalah ....1. Kasti, 2. Golf, 3. Rounders, 4. Gate ball, 5. Hoki, 6. Base ball.",
+                    "options": [
+                        "A. 1, 2 dan 3",
+                        "B. 1, 3 dan 6",
+                        "C. 2, 4 dan 6",
+                        "D. 4, 5 dan 6"
+                    ],
+                    "answer": 1,
+                    "image": ""
+                },
+                {
+                    "question": "Persamaan permainan Kasti dengan Rounders adalah ..... 1. Menggunakan pemukul dari kayu, 2. Teknik permainan, 3. Peraturan, 4. Jumlah Base.",
+                    "options": [
+                        "A. 1 dan 3",
+                        "B. 2 dan 4",
+                        "C. 1 dan 2",
+                        "D. 3 dan 4"
+                    ],
+                    "answer": 2,
+                    "image": ""
+                },
+                {
+                    "question": "Jumlah Base dalam permainan Rounders adalah ....",
+                    "options": [
+                        "A. 3",
+                        "B. 6",
+                        "C. 5",
+                        "D. 4"
+                    ],
+                    "answer": 3,
+                    "image": ""
+                },
+                {
+                    "question": "Teknik dasar dalam permainan Rounders adalah :\n1. Menjaga\n2. Melempar\n3. Mengambil\n4. Menangkap\n5. Memukul",
+                    "options": [
+                        "A. 1, 2 dan 3",
+                        "B. 1, 3 dan 5",
+                        "C. 2, 3 dan 4",
+                        "D. 2, 4 dan 5"
+                    ],
+                    "answer": 3,
+                    "image": ""
+                },
+                {
+                    "question": "Lapangan Rounders berbentuk.....",
+                    "options": [
+                        "A. Segi empat",
+                        "B. Segilima",
+                        "C. Trapesium",
+                        "D. Segitiga"
+                    ],
+                    "answer": 1,
+                    "image": ""
+                }
+            
+        
     
-    
+]

@@ -220,7 +220,7 @@ function submitQuiz() {
 
     // Kirim langsung ke WhatsApp
     const phoneNumber = "6289530067456"; // Ganti dengan nomor tujuan
-    const message = `Nilai BAHASAA INGGRIS ${nama} adalah: ${score} dari ${totalQuestions} (${nilai}%)`;
+    const message = `Nilai IPA ${nama} adalah: ${score} dari ${totalQuestions} (${nilai}%)`;
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappURL, '_blank');
 }
@@ -248,7 +248,7 @@ if (userName) {
 
 
 // Timer untuk kuis
-let timeRemaining = 25 * 60;
+let timeRemaining = 90 * 60;
 let timerInterval = setInterval(() => {
     timeRemaining -= 1;
     document.getElementById('time').textContent = formatTime(timeRemaining);

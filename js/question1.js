@@ -219,7 +219,7 @@ document.addEventListener("DOMContentLoaded", () => {
         
         // Kirim langsung ke WhatsApp
         const phoneNumber = "6289530067456"; // Ganti dengan nomor tujuan
-        const message = `Nilai SENI BUDAYA ${nama} adalah: ${score} dari ${totalQuestions} (${nilai}%)`;
+        const message = `Nilai PJOK ${nama} adalah: ${score} dari ${totalQuestions} (${nilai}%)`;
         const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
         window.open(whatsappURL, '_blank');
     }

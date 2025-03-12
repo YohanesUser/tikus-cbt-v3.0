@@ -1,333 +1,328 @@
 [
     {
-        "question": "Read the following descriptive text: 'Borobudur Temple is one of the most magnificent Buddhist temples in the world. Located in Central Java, Indonesia, this temple was built in the 9th century during the reign of the Sailendra dynasty. The temple consists of nine stacked platforms, six square and three circular, topped by a central dome. The walls are decorated with thousands of relief panels and 504 Buddha statues. It is a UNESCO World Heritage Site and attracts millions of visitors every year.'         What makes Borobudur Temple special according to the text?",
+        "question": "Perubahan kimia ditunjukkan oleh peristiwa ....",
         "options": [
-            "A. It is the largest Hindu temple in Indonesia.",
-            "B. It was built in the 12th century.",
-            "C. It has thousands of relief panels and hundreds of Buddha statues.",
-            "D. It is located in Sumatra."
+            "A. menumbuk dan menghaluskan kapur tulis",
+            "B. uji larutan dengan indikator",
+            "C. melarutkan gula",
+            "D. pencampuran dua larutan Kl dan Pb(NO3)2"
+        ],
+        "answer": 3,
+        "image": "https://github.com/YohanesUser/galeri/blob/main/Screenshot%202025-03-12%20183004.png?raw=true"
+    },
+    {
+        "question": "Reaksi kimia adalah proses perubahan zat menjadi zat baru dengan sifat dan komposisi yang berbeda. Reaksi kimia dapat terjadi di mana saja dan kapan saja. Jenis reaksi kimia meliputi reaksi pembakaran, reaksi kombinasi, reaksi dekomposisi, reaksi perpindahan, dan reaksi perpindahan ganda.\n\nPada gambar, merupakan jenis reaksi yang menyederhanakan zat/senyawa yang kompleks. Reaksi ini disebut reaksi ....",
+        "options": [
+            "A. penguraian/ dekomposisi",
+            "B. kombinasi/ sintesis",
+            "C. pembakaran",
+            "D. penggantian tunggal"
+        ],
+        "answer": 0,
+        "image": "https://github.com/YohanesUser/galeri/blob/main/Screenshot%202025-03-12%20183121.png?raw=true"
+    },
+    {
+        "question": "Pernyataan yang sesuai dengan reaksi Fotosintesis di atas adalah ....1. Matahari sebagai sumber energi dan membantu pembentukan klorofil, 2. CO₂ dan H₂O sebagai bahan hasil akhir reaksi, 3. Hasil akhir dari reaksi fotosintesis adalah glukosa dan oksigen, 4. C₆H₁₂O₆ dan oksigen merupakan bahan dasar reaksi.",
+        "options": [
+            "A. 1 dan 2",
+            "B. 1 dan 3",
+            "C. 2 dan 4",
+            "D. 3 dan 4"
+        ],
+        "answer": 1,
+        "image": "https://github.com/YohanesUser/galeri/blob/main/Screenshot%202025-03-12%20183313.png?raw=true"
+    },
+    {
+        "question": "Wujud zat dalam reaksi kimia ditulis dengan simbol yang diletakkan di sebelah kanan unsur/molekul. Dari reaksi tersebut, wujud zat yang mudah hilang tertiup angin adalah .....",
+        "options": [
+            "A. Fe",
+            "B. Fe2O",
+            "C. 4Fe",
+            "D. O2"
+        ],
+        "answer": 3,
+        "image": "https://github.com/YohanesUser/galeri/blob/main/Screenshot%202025-03-12%20183445.png?raw=true"
+    },
+    {
+        "question": "Dari reaksi di atas, jumlah atom yang benar adalah ....\n1. Fe = 4 atom\n2. O = 6 atom\n3. Fe = 2 atom\n4. O = 3 atom",
+        "options": [
+            "A. 1 dan 2",
+            "B. 1 dan 4",
+            "C. 2 dan 3",
+            "D. 3 dan 4"
+        ],
+        "answer": 0,
+        "image": "https://github.com/YohanesUser/galeri/blob/main/Screenshot%202025-03-12%20183445.png?raw=true"
+    },
+    {
+        "question": "Berikut ini adalah ciri-ciri asam dan basa:\n1. rasa masam, pH 0 - 6,9\n2. licin di kulit, dan bersifat kaustik\n3. dapat menghantarkan listrik\n4. dalam air menghasilkan ion H⁺\n5. mengubah kertas lakmus menjadi biru\n\nCiri dari asam adalah ....",
+        "options": [
+            "A. 2, 3 dan 5",
+            "B. 1, 2 dan 3",
+            "C. 3, 4 dan 5",
+            "D. 1, 3 dan 4"
+        ],
+        "answer": 3,
+        "image": ""
+    },
+    {
+        "question": "Di dalam reaksi kimia dikenal adanya reaksi Eksotermik dan Endotermik. Eksotermik merupakan reaksi kimia yang menghasilkan panas, sedangkan reaksi Endotermik memerlukan panas dalam reaksinya.\n\nSalah satu contoh reaksi Eksotermik dalam kehidupan sehari-hari adalah ....",
+        "options": [
+            "A. asam cuka dan air",
+            "B. batu kapur dan air",
+            "C. air dan oksigen",
+            "D. Fotosintesis"
+        ],
+        "answer": 1,
+        "image": ""
+    },
+    {
+        "question": "pH (Potential of Hydrogen) adalah skala pengukuran yang menunjukkan tingkat keasaman atau kebasaan suatu larutan, cairan, atau zat. pH juga dapat digunakan untuk mengukur keseimbangan kadar asam dan basa dalam tubuh. Dari tabel di atas, bahan yang memiliki pH > 7 adalah ....",
+        "options": [
+            "A. 1, 3 dan 6",
+            "B. 6, 7 dan 8",
+            "C. 2, 5 dan 10",
+            "D. 9, 10 dan 11"
+        ],
+        "answer": 3,
+        "image": "https://github.com/YohanesUser/galeri/blob/main/Screenshot%202025-03-12%20183710.png?raw=true"
+    },
+    {
+        "question": "Berdasarkan gambar di atas jika air cuka dan air sabun ditetesi ekstrak kubis ungu akan memberikan warna .....",
+        "options": [
+            "A. cokelat kemerahan dan biru kehitaman",
+            "B. merah dan kuning",
+            "C. merah dan hijau",
+            "D. kuning dan merah"
+        ],
+        "answer": 1,
+        "image": "https://github.com/YohanesUser/galeri/blob/main/Screenshot%202025-03-12%20183843.png?raw=true"
+    },
+    {
+        "question": "Laju reaksi adalah perubahan konsentrasi pereaksi (reaktan) atau konsentrasi hasil reaksi (produk) tiap satuan waktu. Faktor-faktor yang mempengaruhi laju reaksi adalah .....",
+        "options": [
+            "A. suhu, jumlah zat pereaksi, luas permukaan",
+            "B. ukuran partikel, harga bahan, warna bahan",
+            "C. jenis bahan, suhu, jenis peralatan",
+            "D. kualitas alat, jenis bahan, harga bahan"
+        ],
+        "answer": 0,
+        "image": ""
+    },
+    {
+        "question": "Materi genetik adalah informasi yang dimiliki oleh setiap sel makhluk hidup yang dapat diwariskan kepada keturunannya. Molekul yang berperan sebagai materi genetik adalah ....",
+        "options": [
+            "A. Parental dan filial",
+            "B. Asam Nukleat dan protein",
+            "C. Fenotip dan genotip",
+            "D. Filial dan gamet"
+        ],
+        "answer": 1,
+        "image": "https://github.com/YohanesUser/galeri/blob/main/Screenshot%202025-03-12%20184127.png?raw=true"
+    },
+    {
+        "question": "Kromosom mengandung gen yang membawa karakteristik keturunan dari orang tertentu maupun pada hewan dan tumbuhan. Ciri fisik sangat ditentukan oleh gen yang diwariskan oleh orangtuanya atau induknya. Letak gen berada di bagian ......",
+        "options": [
+            "A. otak",
+            "B. darah",
+            "C. Nucleus",
+            "D. Nucleosom"
         ],
         "answer": 2,
         "image": ""
     },
     {
-        "question": "Read the following procedure text: 'To make a delicious traditional Javanese drink called Wedang Jahe, follow these steps. First, prepare 2 cups of water, 50 grams of fresh ginger (sliced), 2 tablespoons of palm sugar, and 1 pandan leaf. Then, boil the water and add the ginger, palm sugar, and pandan leaf. Stir occasionally and let it simmer for about 10 minutes until the aroma is strong. Finally, strain the drink into a cup and serve it warm. Enjoy your Wedang Jahe!'       What should be done after boiling the water?",
+        "question": "Kromosom manusia adalah materi genetik yang membawa sifat dan informasi dari generasi ke generasi. Kromosom manusia terdiri dari DNA, RNA, dan protein. Setiap organisme memiliki kode rumus genetik/kromosom. Kromosom adalah struktur seperti benang yang terletak di dalam inti sel hewan dan tumbuhan. Kromosom membawa informasi tentang organisme dalam unit yang disebut gen. Ketika makhluk hidup bereproduksi, mereka mewariskan gen mereka kepada keturunannya. Rumus kromosom manusia adalah ....",
         "options": [
-            "A. Serve it with ice cubes.",
-            "B. Add ginger, palm sugar, and pandan leaf.",
-            "C. Drink it immediately.",
-            "D. Throw away the ginger slices."
+            "A. 21 A + X atau 21 A + Y",
+            "B. 22 AA + XX atau 22 AA + XY",
+            "C. 44 AA + XX atau 44 AA + XY",
+            "D. 46 A + XX atau 46 A + XY"
+        ],
+        "answer": 2,
+        "image": ""
+    },
+    {
+        "question": "Pada bagan tersebut, bagian yang disebut parental, gamet dan filial berturut- turut adalah ....",
+        "options": [
+            "A. 1, 2 dan 3",
+            "B. 1 , 3 dan 5",
+            "C. 3, 4 dan 5",
+            "D. 2, 3 dan 4"
+        ],
+        "answer": 1,
+        "image": "https://github.com/YohanesUser/galeri/blob/main/Screenshot%202025-03-12%20184254.png?raw=true"
+    },
+    {
+        "question": "Pasangan yang benar ditunjukkan oleh nomor ....",
+        "options": [
+            "A. 1, 2 dan 3",
+            "B. 1, 3 dan 4",
+            "C. 2, 4 dan 5",
+            "D. 1, 3 dan 5"
+        ],
+        "answer": 2,
+        "image": "https://github.com/YohanesUser/galeri/blob/main/Screenshot%202025-03-12%20184505.png?raw=true"
+    },
+    {
+        "question": "Jika antar F1 disilangkan, maka pernyataan yang benar adalah ....",
+        "options": [
+            "A. 1, 2 dan 3",
+            "B. 2 , 3 dan 4",
+            "C. 1, 3 dan 5",
+            "D. 3, 4 dan 5"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "Jika antar F1 disilangkan dengan sesamanya, maka % bunga Bougenfil warna kuning adalah ....",
+        "options": [
+            "A. 25%",
+            "B. 50%",
+            "C. 75%",
+            "D. 100%"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Jika antar F1 disilangkan dan dihasilkan 8 ekor anakan, maka prosentase burung warna Merah Kuning adalah ....",
+        "options": [
+            "A. 2",
+            "B. 4",
+            "C. 6",
+            "D. 8"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Hasil persilangan Hamster jantan berambut abu-abu (Hh) dengan Hamster betina berambut Hitam (HH) adalah ....",
+        "options": [
+            "A. 1 dan 2",
+            "B. 2 dan 4",
+            "C. 1 dan 4",
+            "D. 3 dan 5"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Pasangan genotip induk yang benar untuk menghasilkan rasio fenotip 1:1:1:1 pada tanaman Alpukat adalah ....",
+        "options": [
+            "A. TTMM >< ttmm",
+            "B. TtMm >< ttmm",
+            "C. Ttmm >< ttMm",
+            "D. TTmm >< ttMM"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Jika tanaman duku berbuah lebat rasa manis (LLMM) disilangkan dengan tanaman jambu berbuah jarang rasa masam (llmm) dan menghasilkan keturunan pertama (LlMm), maka rasio fenotip F2 buah jarang rasa masam : buah lebat rasa masam : buah lebat rasa manis : buah jarang rasa manis adalah .....",
+        "options": [
+            "A. 9 : 3 : 3 : 1",
+            "B. 3 : 3 : 9 : 1",
+            "C. 3 : 1 : 3 : 9",
+            "D. 1 : 3 : 9 : 3"
+        ],
+        "answer": 0,
+        "image": ""
+    },
+    {
+        "question": "Jika tanaman Kelengkeng buah kecil rasa manis (bbMM) disilangkan dengan tanaman Kelengkeng buah besar rasa hambar (BBmm) dan menghasilkan tanaman Kelengkeng buah besar rasa manis, maka jika antar F1 disilangkan dengan sesamanya dan dihasilkan 128 tanaman, kemungkinan tanaman Kelengkeng buah besar rasa manis dengan genotip BbMM pada F2 adalah ....",
+        "options": [
+            "A. 8",
+            "B. 16",
+            "C. 24",
+            "D. 32"
+        ],
+        "answer": 3,
+        "image": ""
+    },
+    {
+        "question": "Pak Tono melakukan persilangan tanaman Semangka dengan memperhatikan dua sifat beda yaitu warna buah dan bentuk buah. Jika warna kuning dan bentuk bulat merupakan sifat dominan, maka prosentase hasil persilangan antara Semangka varietas A yang bergenotip KKBb dan varietas B yang bergenotip kkbb akan menghasilkan rasio fenotip ....",
+        "options": [
+            "A. 1 : 1",
+            "B. 3 : 1",
+            "C. 2 : 1",
+            "D. 4 : 3"
         ],
         "answer": 1,
         "image": ""
     },
     {
-        "question": "Read the following narrative text: 'Once upon a time, there was a wise king named Prabu Brawijaya who ruled over the Majapahit Kingdom. One day, a powerful enemy threatened his land. To protect his people, he sought the help of a brave warrior named Gajah Mada. The warrior led his troops into battle and defeated the enemy with great courage. As a reward, the king honored Gajah Mada with the highest title in the kingdom. From that day on, the people of Majapahit lived in peace and prosperity under their beloved king.'      What was the main problem in the story?",
+        "question": "Perbedaan paling mendasar dari penerapan bioteknologi konvensional dengan modern adalah .....",
         "options": [
-            "A. The king wanted to expand his kingdom.",
-            "B. The king needed to defeat a powerful enemy.",
-            "C. Gajah Mada wanted to become a king.",
-            "D. The people were unhappy with the king."
+            "A. Bioteknologi konvensional menggunakan peralatan sederhana",
+            "B. Bioteknologi modern melibatkan ragi",
+            "C. Bioteknologi konvensional tanpa ada rekayasa",
+            "D. Bioteknologi modern hanya menghasilkan produk kesehatan"
         ],
         "answer": 1,
         "image": ""
     },
     {
-        "question": "Read the following recount text: 'Last year, my family and I visited the famous Parangtritis Beach in Yogyakarta. We arrived in the afternoon and were amazed by the breathtaking view of the vast ocean and golden sand. After setting up our picnic, we played in the waves and took many pictures. As the sun set, the sky turned into a beautiful mix of orange and pink. It was one of the most unforgettable experiences we ever had.' What is the purpose of the text?",
+        "question": "Dari gambar di atas yang merupakan produk bioteknologi modern adalah ....",
         "options": [
-            "A. To describe the beauty of Parangtritis Beach.",
-            "B. To tell a personal experience of visiting Parangtritis Beach.",
-            "C. To give instructions on how to visit Parangtritis Beach.",
-            "D. To inform people about the history of Parangtritis Beach."
+            "A. 1 dan 2",
+            "B. 1 dan 5",
+            "C. 2 dan 4",
+            "D. 3 dan 5"
+        ],
+        "answer": 3,
+        "image": "https://github.com/YohanesUser/galeri/blob/main/Screenshot%202025-03-12%20185119.png?raw=true"
+    },
+    {
+        "question": "Contoh penerapan bioteknologi modern dalam bidang pangan adalah ....",
+        "options": [
+            "A. Tomat tahan hama",
+            "B. Insulin",
+            "C. Antibodi monoklonal",
+            "D. Vaksin"
+        ],
+        "answer": 0,
+        "image": ""
+    },
+    {
+        "question": "Minuman fermentasi adalah minuman yang dihasilkan dari proses fermentasi, yaitu penguraian gula oleh mikroorganisme seperti ragi dan bakteri. Proses ini menghasilkan senyawa organik seperti asam organik dan alkohol. Pada pembuatan wine digunakan mikroorganisme ........... Peran mikroorganisme tersebut adalah .....",
+        "options": [
+            "A. Streptococcus sp memecah glukosa menjadi asam asetat",
+            "B. Lactobacillus sp menguraikan protein menjadi asam amino",
+            "C. Saccharomyces cerevisiae mengubah zat gula menjadi alkohol",
+            "D. Saccharomyces cerevisiae menghasilkan gas CO2 yang membuat adonan mengembang"
+        ],
+        "answer": 2,
+        "image": ""
+    },
+    {
+        "question": "Keunggulan dari kultur jaringan adalah ....Keunggulan dari kultur jaringan adalah: 1) sifat sama dengan induknya, 2) jumlah sama dengan induknya, 3) waktu relatif lebih cepat, 4) peralatan sederhana, 5) hasil lebih banyak.",
+        "options": [
+            "A. 1, 2 dan 3",
+            "B. 1, 3 dan 5",
+            "C. 2, 3 dan 4",
+            "D. 3, 4 dan 5"
         ],
         "answer": 1,
         "image": ""
     },
     {
-        "question": "Look at the following label: 'Gudeg Kendil - Traditional Yogyakarta Cuisine. Ingredients: Young jackfruit, coconut milk, palm sugar, bay leaves, and salt. Storage: Keep refrigerated and consume within three days after opening. Serving suggestion: Best served with rice and boiled eggs.' According to the label, how should Gudeg Kendil be stored?",
+        "question": "Interferon adalah protein alami yang diproduksi oleh tubuh untuk membantu sistem kekebalan melawan infeksi dan penyakit. Interferon juga dapat dibuat di laboratorium untuk digunakan sebagai obat. Fungsi hormon ini bagi kesehatan manusia adalah ....",
         "options": [
-            "A. Keep it in a warm place.",
-            "B. Store it in the refrigerator.",
-            "C. Leave it at room temperature.",
-            "D. Freeze it for long-term storage."
+            "A. pengatur kadar garam dalam darah",
+            "B. pengontrol dan pengatur kadar gula darah",
+            "C. menghambat perkembangan virus",
+            "D. membunuh sel kanker"
+        ],
+        "answer": 2,
+        "image": ""
+    },
+    
+    {
+        "question": "Bioteknologi dapat menimbulkan dampak etika dan moral, seperti kekhawatiran terkait keadilan, keragaman genetik, dan dehumanisasi. Dampak negatif dari bioteknologi yang berkaitan dengan lingkungan adalah ....",
+        "options": [
+            "A. kontaminasi bahan pangan",
+            "B. keseimbangan ekosistem terganggu",
+            "C. mutasi gen menyebabkan kelainan tubuh",
+            "D. pemindahan gen manusia ke dalam tubuh hewan"
         ],
         "answer": 1,
         "image": ""
-    },
-    {
-        "question": "Read the following notice: 'Attention! Visitors to Malioboro Street are reminded to keep the area clean. Please dispose of trash in the designated bins and avoid littering. Let’s keep our beloved Yogyakarta beautiful and enjoyable for everyone. Thank you for your cooperation.' What is the main message of the notice?",
-        "options": [
-            "A. Visitors should avoid walking on Malioboro Street.",
-            "B. People must dispose of trash properly.",
-            "C. There is no trash bin available on Malioboro Street.",
-            "D. Only residents of Yogyakarta are allowed to visit Malioboro."
-        ],
-        "answer": 1,
-        "image": "https://th.bing.com/th/id/OIP.Q7GRTh7V7aPMbzpmA65BLQHaE7?rs=1&pid=ImgDetMain"
-    },
-        {
-            "question": "Read the following descriptive text:\n\n'Borobudur Temple is one of the greatest Buddhist monuments in the world. It is located in Magelang, Central Java, Indonesia. The temple was built in the 9th century during the reign of the Sailendra Dynasty. It consists of nine stacked platforms, six square and three circular, topped by a central dome. The temple is decorated with 2,672 relief panels and 504 Buddha statues. The central dome is surrounded by 72 Buddha statues, each seated inside a perforated stupa.'\n\nWhat is the main purpose of the text?",
-            "options": [
-                "A. To explain the history of Borobudur Temple",
-                "B. To describe the structure and features of Borobudur Temple",
-                "C. To persuade people to visit Borobudur Temple",
-                "D. To compare Borobudur Temple with other Buddhist temples"
-            ],
-            "answer": 1,
-            "image": ""
-        },
-        {
-            "question": "Read the following procedure text:\n\n'How to Make a Traditional Yogyakarta Batik:\n1. Prepare a piece of white cotton cloth and draw the desired pattern using a pencil.\n2. Apply hot wax over the pencil lines using a canting tool to prevent certain areas from being colored.\n3. Dip the cloth into the dye bath and let it absorb the color.\n4. Repeat the waxing and dyeing process for multiple colors.\n5. Finally, remove the wax by boiling the cloth in hot water, revealing the final batik pattern.'\n\nWhat is the function of wax in batik making?",
-            "options": [
-                "A. To make the fabric softer",
-                "B. To create patterns by resisting dye",
-                "C. To give the cloth a glossy finish",
-                "D. To keep the cloth from shrinking"
-            ],
-            "answer": 1,
-            "image": ""
-        },
-        {
-            "question": "Read the following narrative text:\n\n'Once upon a time, in the kingdom of Mataram, there was a brave prince named Raden Mas Said. He was known for his intelligence and fighting skills. When his father was betrayed by the Dutch colonizers, he gathered his loyal warriors and fought against them. He led many successful battles, using guerrilla tactics to surprise his enemies. Eventually, he became a respected leader and was later known as Mangkunegara I.'\n\nWhat can we learn from the story?",
-            "options": [
-                "A. Intelligence and bravery can lead to victory",
-                "B. The Dutch were always stronger than local leaders",
-                "C. Betrayal is necessary to gain power",
-                "D. Wars are always won with large armies"
-            ],
-            "answer": 0,
-            "image": ""
-        },
-        {
-            "question": "Read the following recount text:\n\n'Last holiday, I visited Malioboro Street in Yogyakarta. The street was crowded with tourists enjoying the vibrant atmosphere. I walked along the road, looking at the various street vendors selling batik, traditional snacks, and souvenirs. I also tried gudeg, Yogyakarta’s famous dish made of young jackfruit, coconut milk, and spices. It was delicious! Before heading home, I bought some souvenirs for my friends and family.'\n\nWhat is the purpose of the text?",
-            "options": [
-                "A. To explain how to make gudeg",
-                "B. To describe the history of Malioboro Street",
-                "C. To tell the writer’s experience in Malioboro",
-                "D. To persuade people to visit Yogyakarta"
-            ],
-            "answer": 2,
-            "image": ""
-        },
-        {
-            "question": "Read the following label text:\n\n'Product: Keripik Tempe Yogyakarta\nIngredients: Tempeh, Garlic, Salt, Coriander, Palm Oil\nNet Weight: 200g\nBest Before: December 2025\nManufactured by: PT Makanan Tradisional, Yogyakarta'\n\nWhat can be inferred from the label?",
-            "options": [
-                "A. The product contains artificial preservatives",
-                "B. The product is made in Yogyakarta",
-                "C. The product must be stored in a refrigerator",
-                "D. The product is only available in December"
-            ],
-            "answer": 1,
-            "image": ""
-        },
-        {
-            "question": "Read the following notice:\n\n'WARNING! \nDo not enter the restricted area without permission. Violators will be fined.'\n\nWhat does the notice mean?",
-            "options": [
-                "A. People can enter the area freely",
-                "B. The area is only for tourists",
-                "C. Entering the area without permission is prohibited",
-                "D. The area is safe for everyone"
-            ],
-            "answer": 2,
-            "image": ""
-        },
-        {
-            "question": "Read the following descriptive text:\n\n'Taman Sari Water Castle is a historical site in Yogyakarta. Built in the 18th century by Sultan Hamengkubuwono I, it served as a royal garden for the Sultan and his family. The complex includes bathing pools, underground tunnels, and beautiful gardens. It was also used as a hiding place during wartime. Today, Taman Sari is a popular tourist destination where visitors can learn about Yogyakarta’s history and culture.'\n\nWhat is the main idea of the text?",
-            "options": [
-                "A. Taman Sari was built in the 20th century",
-                "B. Taman Sari is a royal garden and historical site",
-                "C. The Sultan’s family disliked Taman Sari",
-                "D. Taman Sari is a place for military training"
-            ],
-            "answer": 1,
-            "image": ""
-        },
-        {
-            "question": "Read the following recount text:\n\n'Last Sunday, my friends and I went to Parangtritis Beach. We arrived early in the morning and saw the beautiful sunrise. The beach was peaceful, with soft sand and gentle waves. We played beach volleyball, built sandcastles, and took many pictures. In the afternoon, we rode ATVs along the shore, which was very exciting. Before going home, we enjoyed fresh seafood at a nearby restaurant. It was a memorable trip.'\n\nWhat activity did they do in the afternoon?",
-            "options": [
-                "A. Watching the sunrise",
-                "B. Playing beach volleyball",
-                "C. Riding ATVs",
-                "D. Swimming in the ocean"
-            ],
-            "answer": 2,
-            "image": ""
-        },
-        {
-            "question": "Read the following procedure text:\n\n'How to Make Wedang Ronde:\n1. Boil water and add ginger slices, pandan leaves, and brown sugar.\n2. Prepare glutinous rice balls by mixing glutinous rice flour with water and food coloring.\n3. Shape the dough into small balls and boil them until they float.\n4. Serve the rice balls in the ginger broth with peanuts and other toppings.'\n\nWhat is the main ingredient of the rice balls?",
-            "options": [
-                "A. Wheat flour",
-                "B. Glutinous rice flour",
-                "C. Corn flour",
-                "D. Rice grains"
-            ],
-            "answer": 1,
-            "image": ""
-        },
-        {
-            "question": "Read the following notice:\n\n'PLEASE KEEP SILENCE\nThis area is used for studying and research. Thank you for your cooperation.'\n\nWhere is this notice most likely found?",
-            "options": [
-                "A. In a library",
-                "B. At a concert",
-                "C. In a marketplace",
-                "D. At a train station"
-            ],
-            "answer": 0,
-            "image": ""
-        },
-            {
-                "question": "Read the following descriptive text:\n\n'Prambanan Temple is a famous Hindu temple located in Yogyakarta, Indonesia. It was built in the 9th century and is dedicated to the Hindu gods Brahma, Vishnu, and Shiva. The temple complex consists of many tall and pointed structures, with the tallest reaching 47 meters. The walls of the temple are adorned with detailed carvings that depict ancient Hindu stories. Tourists from around the world visit Prambanan to admire its beauty and learn about its history.'\n\nWhat is the height of the tallest structure in Prambanan Temple?",
-                "options": [
-                    "A. 35 meters",
-                    "B. 47 meters",
-                    "C. 60 meters",
-                    "D. 25 meters"
-                ],
-                "answer": 1,
-                "image": ""
-            },
-            {
-                "question": "Read the following procedure text:\n\n'How to Make Javanese Fried Rice:\n1. Heat some oil in a pan and sauté garlic, shallots, and chili until fragrant.\n2. Add cooked rice and stir well.\n3. Pour sweet soy sauce and season with salt and pepper.\n4. Stir-fry the rice for a few minutes until evenly mixed.\n5. Serve the fried rice with fried egg and prawn crackers.'\n\nWhat is the last step of making Javanese Fried Rice?",
-                "options": [
-                    "A. Adding sweet soy sauce",
-                    "B. Stir-frying the rice",
-                    "C. Serving with fried egg and prawn crackers",
-                    "D. Sautéing garlic, shallots, and chili"
-                ],
-                "answer": 2,
-                "image": ""
-            },
-            {
-                "question": "Read the following narrative text:\n\n'A long time ago, there was a wise and kind king named Sultan Agung. He ruled the Mataram Kingdom with fairness and intelligence. However, one day, the Dutch colonialists tried to take over his kingdom. Sultan Agung did not surrender. He gathered his soldiers and planned a great attack. His strategies were clever, and he managed to defeat the enemy in several battles. Even though he faced many challenges, he never gave up on his people.'\n\nWhat can we learn from the story?",
-                "options": [
-                    "A. We should always be kind to others",
-                    "B. We should never give up in difficult situations",
-                    "C. We should surrender to powerful enemies",
-                    "D. We should rely only on others to solve problems"
-                ],
-                "answer": 1,
-                "image": ""
-            },
-            {
-                "question": "Read the following recount text:\n\n'Last weekend, my family and I visited Gembira Loka Zoo in Yogyakarta. We arrived early in the morning and saw many animals, including elephants, lions, and orangutans. My little brother was very excited to see the fish in the aquarium. After walking around for a few hours, we stopped to eat lunch at a small food stall. Before leaving, we took some pictures near the lake. It was a fun and memorable experience.'\n\nWhat did the writer’s little brother enjoy the most?",
-                "options": [
-                    "A. Watching the elephants",
-                    "B. Seeing the fish in the aquarium",
-                    "C. Taking pictures near the lake",
-                    "D. Eating lunch at a food stall"
-                ],
-                "answer": 1,
-                "image": ""
-            },
-            {
-                "question": "Read the following label text:\n\n'Product: Yogyakarta Honey\nIngredients: 100% Pure Honey\nNet Weight: 500g\nBest Before: January 2026\nStorage Instructions: Store in a cool, dry place.'\n\nWhere should this product be stored?",
-                "options": [
-                    "A. In the refrigerator",
-                    "B. In a humid place",
-                    "C. In a cool, dry place",
-                    "D. Under direct sunlight"
-                ],
-                "answer": 2,
-                "image": ""
-            },
-            {
-                "question": "Read the following notice:\n\n'DO NOT FEED THE ANIMALS\nFeeding animals with human food can be harmful to their health. Please follow the rules for their safety.'\n\nWhy should people not feed the animals?",
-                "options": [
-                    "A. Because the animals are dangerous",
-                    "B. Because it can harm their health",
-                    "C. Because only zookeepers are allowed to feed them",
-                    "D. Because they only eat plants"
-                ],
-                "answer": 1,
-                "image": ""
-            },
-            {
-                "question": "Read the following descriptive text:\n\n'Yogyakarta is a city rich in culture and history. It is known for its royal palace, batik industry, and traditional arts. Tourists visit Yogyakarta to see the magnificent Prambanan Temple, explore the lively Malioboro Street, and enjoy delicious local foods such as gudeg. The city is also home to many talented artists who create beautiful handicrafts and paintings. With its friendly people and vibrant atmosphere, Yogyakarta is a favorite destination for travelers.'\n\nWhat makes Yogyakarta a favorite tourist destination?",
-                "options": [
-                    "A. Its modern skyscrapers",
-                    "B. Its rich culture and history",
-                    "C. Its cold weather",
-                    "D. Its large population"
-                ],
-                "answer": 1,
-                "image": ""
-            },
-            {
-                "question": "Read the following recount text:\n\n'Last month, my school organized a study tour to Keraton Yogyakarta. We were welcomed by a guide who explained the history of the royal palace. We walked through the beautiful halls, saw ancient artifacts, and watched a traditional dance performance. The guide also told us interesting stories about the sultans who once ruled Yogyakarta. Before we left, we bought some souvenirs from the palace gift shop. It was an amazing educational trip.'\n\nWho welcomed the students at Keraton Yogyakarta?",
-                "options": [
-                    "A. The Sultan",
-                    "B. A tourist",
-                    "C. A guide",
-                    "D. A dancer"
-                ],
-                "answer": 2,
-                "image": ""
-            },
-            {
-                "question": "Read the following procedure text:\n\n'How to Make a Traditional Javanese Mask:\n1. Prepare a wooden block and carve it into the shape of a face.\n2. Smooth the surface using sandpaper.\n3. Paint the mask with natural colors and traditional patterns.\n4. Let the paint dry before applying a finishing layer of varnish.'\n\nWhat is the purpose of using sandpaper in the process?",
-                "options": [
-                    "A. To add a rough texture to the mask",
-                    "B. To smooth the surface before painting",
-                    "C. To change the shape of the mask",
-                    "D. To create traditional patterns"
-                ],
-                "answer": 1,
-                "image": ""
-            },
-            {
-                "question": "Read the following notice:\n\n'PLEASE DISPOSE OF YOUR TRASH PROPERLY\nHelp keep the environment clean by using the trash bins provided.'\n\nWhat is the purpose of the notice?",
-                "options": [
-                    "A. To warn people about pollution",
-                    "B. To encourage people to recycle",
-                    "C. To remind people to throw trash in the proper place",
-                    "D. To prohibit people from using trash bins"
-                ],
-                "answer": 2,
-                "image": ""
-            },
-            {
-                "question": "Read the following narrative text:\n\n'A long time ago in Yogyakarta, there was a brave prince named Raden Rangga. He was known for his kindness and wisdom. One day, an evil sorcerer threatened his kingdom, causing fear among the people. Raden Rangga, with his intelligence and courage, fought the sorcerer using a magical kris inherited from his ancestors. After a fierce battle, he defeated the sorcerer and restored peace to the land.'\n\nWhat was Raden Rangga’s main strength?",
-                "options": [
-                    "A. His ability to use dark magic",
-                    "B. His kindness and wisdom",
-                    "C. His fear of the sorcerer",
-                    "D. His physical strength"
-                ],
-                "answer": 1,
-                "image": ""
-            },
-            {
-                "question": "Read the following recount text:\n\n'Last holiday, I visited Taman Sari in Yogyakarta. It was a beautiful place with historical water palaces. I walked through tunnels and saw ancient pools where the royal family used to relax. The guide explained the history of the palace, and I was amazed by its architecture. Before leaving, I took many pictures and bought a souvenir. It was a fantastic experience that I will never forget!'\n\nWhat did the writer do before leaving Taman Sari?",
-                "options": [
-                    "A. Took pictures and bought a souvenir",
-                    "B. Relaxed in the pool",
-                    "C. Talked to the royal family",
-                    "D. Built a new palace"
-                ],
-                "answer": 0,
-                "image": ""
-            },
-            {
-                "question": "Read the following procedure text:\n\n'How to Make Wedang Jahe (Ginger Tea):\n1. Peel and slice fresh ginger.\n2. Boil water in a pot and add the ginger slices.\n3. Let it simmer for about 10 minutes.\n4. Strain the tea and add honey or palm sugar for sweetness.\n5. Serve hot and enjoy!'\n\nWhy should the ginger be boiled for 10 minutes?",
-                "options": [
-                    "A. To soften the ginger slices",
-                    "B. To bring out the strong ginger flavor",
-                    "C. To remove the bitterness",
-                    "D. To make the tea turn red"
-                ],
-                "answer": 1,
-                "image": ""
-            },
-            {
-                "question": "Read the following notice:\n\n'CAUTION: WET FLOOR\nFor your safety, please walk carefully and avoid running.'\n\nWhat is the purpose of this notice?",
-                "options": [
-                    "A. To warn people about a slippery floor",
-                    "B. To invite people to clean the floor",
-                    "C. To ask people to spill water on the floor",
-                    "D. To tell people to run faster"
-                ],
-                "answer": 0,
-                "image": ""
-            }
-        ]
-        
+    }
+]    
