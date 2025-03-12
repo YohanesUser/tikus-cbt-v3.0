@@ -622,5 +622,91 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
     });
+
+    document.addEventListener("DOMContentLoaded", () => {
+        let questions = [];
+    
+        async function loadQuestions() {
+            try {
+                const response = await fetch("../data/questions.json");
+                if (!response.ok) throw new Error("Gagal memuat data!");
+    
+                questions = await response.json();
+                console.log("Data soal berhasil dimuat:", questions);
+                loadQuestion();
+            } catch (error) {
+                console.error("Error:", error);
+            }
+        }
+    
+        function loadQuestion() {
+            // Implementasi untuk memuat pertanyaan
+        }
+    
+        document.querySelectorAll("img").forEach(img => {
+            img.style.transition = "transform 0.3s ease-in-out, left 0.3s ease, top 0.3s ease";
+            img.style.cursor = "grab";
+            img.style.position = "relative";
+    
+            let isDragging = false;
+            let startX, startY, initialX, initialY;
+    
+            const zoomIn = () => img.style.transform = "scale(2)";
+            const zoomOut = () => img.style.transform = "scale(1)";
+    
+            img.addEventListener("mousedown", (e) => {
+                zoomIn();
+                isDragging = true;
+                startX = e.clientX;
+                startY = e.clientY;
+                initialX = img.offsetLeft;
+                initialY = img.offsetTop;
+                img.style.cursor = "grabbing";
+            });
+    
+            img.addEventListener("mouseup", () => {
+                zoomOut();
+                isDragging = false;
+                img.style.cursor = "grab";
+            });
+    
+            img.addEventListener("mouseleave", () => {
+                zoomOut();
+                isDragging = false;
+                img.style.cursor = "grab";
+            });
+    
+            img.addEventListener("mousemove", (e) => {
+                if (!isDragging) return;
+                let dx = e.clientX - startX;
+                let dy = e.clientY - startY;
+                img.style.transform = `scale(2) translate(${dx * 0.5}px, ${dy * 0.5}px)`;
+            });
+    
+            img.addEventListener("touchstart", (e) => {
+                e.preventDefault(); // Mencegah scroll saat zoom
+                zoomIn();
+                isDragging = true;
+                const touch = e.touches[0];
+                startX = touch.clientX;
+                startY = touch.clientY;
+                initialX = img.offsetLeft;
+                initialY = img.offsetTop;
+            });
+    
+            img.addEventListener("touchmove", (e) => {
+                if (!isDragging) return;
+                const touch = e.touches[0];
+                let dx = touch.clientX - startX;
+                let dy = touch.clientY - startY;
+                img.style.transform = `scale(2) translate(${dx * 0.5}px, ${dy * 0.5}px)`;
+            });
+    
+            img.addEventListener("touchend", () => {
+                zoomOut();
+                isDragging = false;
+            });
+        });
+    });
     
     
